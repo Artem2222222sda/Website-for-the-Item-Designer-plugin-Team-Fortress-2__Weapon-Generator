@@ -103,6 +103,8 @@ Below are links that helped in the creation of this project
   I will also say that if you change the code, then I am not responsible for problems on the site.
   
   Please do not remove the inscription in the lower right corner. If you use the project in your projects, then please mention the author
+  
+  The characteristics of the weapon may not match the characteristics in the game. To prevent the game from crashing, read the approximate characteristics of the weapon. If the game crashes because of some attribute, then add it to the Black List (BlackListAttribute variable)
 </i>
 
   <br><br>
@@ -122,6 +124,7 @@ Below are links that helped in the creation of this project
   
    Пожалуйста, не удаляйте надпись в правом нижнем углу. Если вы используете проект в своих проектах, то просьба указывать автора
   
+  Характеристи оружие могут не совпадать с характеристиками в игре. Чтобы игра не вылетал читайте приблизительные характристики оружия. Если игра вылетает из-за кого-небудь атрибута то добавте его в Чёрный список(переменная BlackListAttribute)
   :) 
   Baron Варон
 </i>
