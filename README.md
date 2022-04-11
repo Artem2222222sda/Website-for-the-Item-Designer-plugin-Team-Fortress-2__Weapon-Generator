@@ -86,9 +86,9 @@ Well, if you want to make your own weapon then :
 </i>
 
 <h2 style="color:red">WARNING! / ВНИМАНИЕ! </h2>
-<i>(ENG)---- We do not exclude errors, bugs and shortcomings. This project made a number for the sake of interest.
-I translated all the text into English using Google Translate.
-Below are links to the used site, services.
+<i>(ENG)---- We do not exclude errors, bugs and shortcomings. This project did the number for the sake of interest.
+I have translated all the text into English using Google Translate.
+Below are links that helped in the creation of this project
 
   <b>
   <ul>
@@ -101,4 +101,24 @@ Below are links to the used site, services.
   I will also say that if you change the code, then I am not responsible for problems on the site.
   
   Please do not remove the inscription in the lower right corner. If you use the project in your projects, then please mention the author
+</i>
+
+  <br><br>
+<i>(RUS)---- Мы не исключаем ошибок, багов и недочетов. Этот проект сделал номер ради интереса.
+Я перевел весь текст на английский с помощью Google Translate.
+Ниже приведены ссылки которые помогали в создании данного проекта
+
+  <b>
+  <ul>
+    <li>TF2 Attribute ---- https://wiki.teamfortress.com/wiki/List_of_item_attributes/ru</li>
+    <li>TF2 Item Definition Indexes ---- https://wiki.alliedmods.net/Team_fortress_2_item_definition_indexes</li>
+    <li>Прагин ---- https://forums.alliedmods.net/showthread.php?p=1353985</li>
+    </ul>
+  </b>
+  
+  Также скажу, что если вы измените код, то я не несу ответственности за проблемы на сайте.
+  
+   Пожалуйста, не удаляйте надпись в правом нижнем углу. Если вы используете проект в своих проектах, то просьба указывать автора
+  
+  :)
 </i>
