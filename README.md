@@ -2,6 +2,8 @@
 
 <br>
 <img src="Photo.png" alt="Site demo">
+<img src="Photo(eng).png" alt="Site demo">
+
 <h2>What is it?   /   Что это?</h2>
 <i>(ENG)---- This site is an addition to the <a href="https://forums.alliedmods.net/showthread.php?p=1353985">Item Designer plugin.</a> Plugin for the game <a href="https://forums.alliedmods.net/showthread.php?p=1353985">Team Fortress 2</a></i>
 <br>
