@@ -39,7 +39,7 @@
     <li>Select the class you need by clicking on the class icon. </li>
     <li>Choose what weapon you want (Primary, Secondary, Melee)</li>
     <li>Choose whom to issue</li>
-    <li>Click on the "Generate" button</li>
+    <li>Click on the "Generate" button ( The characteristics of the weapon may not match the characteristics in the game.)</li>
   </ul>
   </b>
 <br><br>
@@ -53,7 +53,7 @@ Well, if you want to make your own weapon then :
     <li>Now just below select which feature you want to add.</li>
     <li> A little to the right we write "Power" (1 = 100%; 2 = 200%)</li>
     <li>Press the "Add" button</li>
-    <li> Add how many attributes you need</li>
+    <li> Add how many attributes you need( The characteristics of the weapon may not match the characteristics in the game.)</li>
     <li> Press the "Generate command" button</li>
     </ul>
   </b>
@@ -67,7 +67,7 @@ Well, if you want to make your own weapon then :
      <li> выберите класс который вам нужн нажав по иконке класс. (Вверху)</li>
      <li> Выберите какое вы хотите оружие(Основное, Дополнительон,Рукопашное)</li>
      <li> Выберите кому выдать </li>
-     <li> Нажмите на кнопку "Cгенерировать".</li>
+     <li> Нажмите на кнопку "Cгенерировать"(Характеристи оружие могут не совпадать с характеристиками в игре).</li>
    </ul>
     </b>
   <br><br>
@@ -81,8 +81,8 @@ Well, if you want to make your own weapon then :
     <li>Теперь чуть ниже выбирает какую характеритику вы хотите добавить.</li>
     <li>Чуть правее пишем "Мощьность" (1 = 100%; 2 = 200%)</li>
     <li>Нажимаем кнопку "Добавить"</li>
-    <li> Добавляем сколко вам надо атрибутов</li>
-    <li> Нажимаем кнопку "Сгенерировать команду"</li>
+    <li> Добавляем сколко вам надо атрибутов (Характеристи оружие могут не совпадать с характеристиками в игре)</li>
+    <li> Нажимаем кнопку "Сгенерировать команду" </li>
  </ul>
   </b>
 </i>
@@ -105,6 +105,8 @@ Below are links that helped in the creation of this project
   Please do not remove the inscription in the lower right corner. If you use the project in your projects, then please mention the author
   
   The characteristics of the weapon may not match the characteristics in the game. To prevent the game from crashing, read the approximate characteristics of the weapon. If the game crashes because of some attribute, then add it to the Black List (BlackListAttribute variable)
+  
+  css and js are in one file
 </i>
 
   <br><br>
@@ -112,6 +114,7 @@ Below are links that helped in the creation of this project
 Я перевел весь текст на английский с помощью Google Translate.
 Ниже приведены ссылки которые помогали в создании данного проекта
 
+  
   <b>
   <ul>
     <li>TF2 Attribute ---- https://wiki.teamfortress.com/wiki/List_of_item_attributes/ru</li>
@@ -125,6 +128,9 @@ Below are links that helped in the creation of this project
    Пожалуйста, не удаляйте надпись в правом нижнем углу. Если вы используете проект в своих проектах, то просьба указывать автора
   
   Характеристи оружие могут не совпадать с характеристиками в игре. Чтобы игра не вылетал читайте приблизительные характристики оружия. Если игра вылетает из-за кого-небудь атрибута то добавте его в Чёрный список(переменная BlackListAttribute)
+  
+  css и js написаны в одно файле 
+  
   :) 
   Baron Варон
 </i>
