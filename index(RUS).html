@@ -731,7 +731,7 @@ background: linear-gradient(180deg, rgba(254,247,229,1) 0%, rgb(189, 173, 153) 1
     function DestroyAttribute(f,a,b,c){
  
 document.getElementById('Span_'+(a+1)).remove()
-console.log(AllPowerForCustom[a])
+
 //if(AllPowerForCustom[a] == undefined && a > AllPowerForCustom.length-1 ){
     //AllPowerForCustom[AllPowerForCustom.length-1] = null
 //}else{
@@ -782,7 +782,7 @@ var x2
         
         var Value = 0
         for(var dc = 0 ;dc<AllAtribute.length;dc++){
-           // console.log(AllAtribute[dc][0] == document.getElementById('listAttribute').querySelector(':checked').getAttribute('data--id'))
+          
             if(AllAtribute[dc][0] == document.getElementById('listAttribute').querySelector(':checked').getAttribute('data--id')){
                 Value = AllAtribute[dc]
               break
@@ -816,7 +816,7 @@ var x2
        
         var Value = 0
         for(var dc = 0 ;dc<Atribute_not_used_or_secret.length;dc++){
-                  // console.log(AllAtribute[dc][0] == document.getElementById('listAttribute').querySelector(':checked').getAttribute('data--id'))
+                
                   if(Atribute_not_used_or_secret[dc][0] == document.getElementById('listAttribute').querySelector(':checked').getAttribute('data--id')){
                 Value = Atribute_not_used_or_secret[dc]
               break
@@ -872,7 +872,7 @@ function RemoveAll(){
 }
     function CreateCustom(a) {
         document.getElementById('Button_gen').style.display = 'none'
-        document.getElementById('Button_custom').innerHTML = 'Создать радомное оружие'
+        document.getElementById('Button_custom').innerHTML = 'Создать рандомное оружие'
         document.getElementById('SettingsRandom').style.display = 'none'
         
         CreCus = true
@@ -895,7 +895,7 @@ function RemoveAll(){
             
             object.dataset.Id = AllAtribute[f][0]
             pos.appendChild(object)
-            //document.getElementById('listAttribute').innerHTML += '<option>' + AllAtribute[f][1] + '</option>'
+            
         }
         for (var f = 0; f < Atribute_not_used_or_secret.length; f++) {
             var object = document.createElement('option')
@@ -905,7 +905,7 @@ function RemoveAll(){
             object.dataset.Id = Atribute_not_used_or_secret[f][0]
             object.innerHTML = Atribute_not_used_or_secret[f][1] + '<code style="color:red" onmousemove="MoveTitle()" onmouseover="SeeTitle()" onmouseout="DestroyTitle()">(&#9888;)</code>'
             pos.appendChild(object)
-            //document.getElementById('listAttribute').innerHTML += '<option>' + AllAtribute[f][1] + '</option>'
+           
         }
         for (var i = 0; i < 9; i++) {
 
@@ -982,7 +982,7 @@ document.getElementById('ststua').style.display = ''
             }
         }
         var OnlyBasics = false
-        //  alert('Добавить символ  9888    26A0         WARNING SIGN при наведении которого будет появляться информация о неиспользуемом оружии ')
+      
         var d = [
 
         ]
