@@ -110,7 +110,7 @@ Below are links that helped in the creation of this project
 </i>
 
   <br><br>
-<i>(RUS)---- Мы не исключаем ошибок, багов и недочетов. Этот проект сделал номер ради интереса.
+<i>(RUS)---- Я не исключаем ошибок, багов и недочетов. Этот проект сделан ради интереса.
 Я перевел весь текст на английский с помощью Google Translate.
 Ниже приведены ссылки которые помогали в создании данного проекта
 
@@ -119,7 +119,7 @@ Below are links that helped in the creation of this project
   <ul>
     <li>TF2 Attribute ---- https://wiki.teamfortress.com/wiki/List_of_item_attributes/ru</li>
     <li>TF2 Item Definition Indexes ---- https://wiki.alliedmods.net/Team_fortress_2_item_definition_indexes</li>
-    <li>Прагин ---- https://forums.alliedmods.net/showthread.php?p=1353985</li>
+    <li>Плагин ---- https://forums.alliedmods.net/showthread.php?p=1353985</li>
     </ul>
   </b>
   
