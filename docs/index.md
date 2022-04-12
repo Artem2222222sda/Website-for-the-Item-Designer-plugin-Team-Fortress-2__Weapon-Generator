@@ -1,37 +1,2755 @@
-## Welcome to GitHub Pages
+<!--
 
-You can use the [editor on GitHub](https://github.com/Artem2222222sda/Website-for-the-Item-Designer-plugin-Team-Fortress-2__Weapon-Generator/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
+    Created by Baron Varon (Artyom)
+    Date of last update : 04.11.2022
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+    Copyright (C) 2022 Baron Varon
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+    I will say that if you change the code, then I do not judge the application for a problem on the site.
 
-- Bulleted
-- List
+    Please do not delete the entry in the upper right corner. If you are present in your projects, at the request of the author
 
-1. Numbered
-2. List
 
-**Bold** and _Italic_ and `Code` text
+    good use
+    :)
 
-[Link](url) and ![Image](src)
-```
+                                                 Baron Варон
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+-->
 
-### Jekyll Themes
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Artem2222222sda/Website-for-the-Item-Designer-plugin-Team-Fortress-2__Weapon-Generator/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+<html>
+<head>
+    <title>Generator</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
 
-### Support or Contact
+        input[type=number] {
+     
+        
+            box-sizing: border-box;
+            border: none;
+            margin-left: 10px;
+        }
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+
+        body {
+            background-color: #2c2626;
+            color: #fff;
+            font-family: "Open Sans", sans-serif;
+            margin: 0;
+            padding: 0;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        button {
+            padding: 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 20px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+            color: #efe7d1;
+            cursor: pointer;
+            transition: 0.3s;
+            background-color: #776b5f;
+
+
+        }
+
+        g {
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #d4d4d4;
+            color: #000000;
+        }
+
+        label span {
+            font-size: 20px;
+            font-family: 'Roboto', system-ui;
+            font-weight: bold;
+            background: rgb(254, 247, 229);
+            background: -moz-linear-gradient(180deg, rgba(254, 247, 229, 1) 0%, rgb(189, 173, 153) 100%);
+            background: -webkit-linear-gradient(180deg, rgba(254, 247, 229, 1) 0%, rgb(189, 173, 153) 100%);
+            background: linear-gradient(180deg, rgba(254, 247, 229, 1) 0%, rgb(189, 173, 153) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fef7e5", endColorstr="#d8c6b0", GradientType=1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        b,
+        i,
+        samp {
+            font-family: monospace;
+            color: grey;
+        }
+
+        .Tf2-logo {
+            background: rgb(254, 247, 229);
+            background: -moz-linear-gradient(180deg, rgba(254, 247, 229, 1) 0%, rgba(216, 198, 176, 1) 100%);
+            background: -webkit-linear-gradient(180deg, rgba(254, 247, 229, 1) 0%, rgba(216, 198, 176, 1) 100%);
+            background: linear-gradient(180deg, rgba(254, 247, 229, 1) 0%, rgba(216, 198, 176, 1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fef7e5", endColorstr="#d8c6b0", GradientType=1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: larger;
+            font-family: system-ui;
+
+        }
+        select option{
+            width:300px;
+            overflow: scroll;
+        }
+    </style>
+
+
+</head>
+<body>
+<div id="creator"
+    style="position: fixed;z-index: 2;background-color: rgba(0,0,0,0.5);border-radius: 5px;bottom: 0;right: 0;padding: 10px;color:white;font-family: 'Courier New', Courier, monospace;">
+    <!-- <p style="color:red">WARNING!!!</p>-->
+    <p>Version 2.2</p>
+    <p>Create by Baron Варон</p>
+</div>
+
+<h1 style="text-align: center;padding-top: 50px; font-family: system-ui;">
+    Website for the <a href="https://forums.alliedmods.net/showthread.php?p=1353985">Item Designer plugin</a> (<span
+        class="Tf2-logo">Team Fortress 2</span>)
+
+
+</h1>
+<div style="
+margin-top: 50px;
+margin-bottom: 50px;
+display: flex;flex-wrap: wrap;
+justify-content: space-around;
+">
+    <div style="text-align: center;    display: flex;" onclick="ClickClass(0,'svg_scout')">
+        <label style="margin-right: 20px;">
+
+            <span>Scout</span>
+            <br>
+            <input type="checkbox" id="0" style="display: none;">
+
+
+
+            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="60.000000pt" height="60.000000pt"
+                viewBox="0 0 540.000000 540.000000" preserveAspectRatio="xMidYMid meet">
+
+                <g fill="white" id='svg_scout' transform="translate(0.000000,540.000000) scale(0.100000,-0.100000)"
+                    fill="#000000" stroke="none">
+                    <path d="M2530 4734 c-14 -2 -65 -9 -115 -15 -408 -51 -822 -253 -1134 -554
+-316 -305 -518 -693 -598 -1150 -24 -140 -24 -490 0 -630 80 -457 282 -845
+598 -1150 306 -295 668 -476 1104 -552 140 -24 490 -24 630 0 436 76 798 257
+1104 552 316 305 518 693 598 1150 24 140 24 490 0 630 -80 457 -282 845 -598
+1150 -304 294 -673 478 -1099 550 -90 16 -434 29 -490 19z m439 -120 c708
+-104 1296 -578 1544 -1244 99 -266 147 -617 116 -845 -68 -499 -231 -851 -538
+-1168 -170 -176 -321 -287 -536 -393 -623 -309 -1357 -262 -1931 125 -225 151
+-385 311 -535 535 -387 575 -434 1309 -125 1931 108 216 217 366 393 536 296
+287 687 476 1093 528 115 15 404 12 519 -5z" />
+                    <path d="M3603 4081 c-79 -48 -151 -95 -160 -103 -23 -20 -386 -178 -478 -208
+-139 -46 -364 -163 -465 -242 -75 -59 -95 -80 -94 -99 2 -59 26 -242 45 -336
+15 -78 21 -148 22 -283 1 -99 4 -180 7 -180 7 0 195 25 491 65 142 19 269 35
+283 35 37 0 32 14 -16 52 -76 61 -96 69 -252 113 -55 15 -57 17 -41 34 9 11
+55 29 103 41 129 32 193 70 300 178 86 87 109 117 80 107 -19 -7 -796 -215
+-803 -215 -3 0 -5 -59 -5 -131 0 -86 -4 -129 -10 -127 -7 2 -11 92 -11 263 0
+225 3 267 19 313 l18 54 522 221 521 220 26 76 c22 67 55 206 55 232 0 16 -12
+10 -157 -80z" />
+                    <path d="M3149 3608 l-496 -210 -16 -52 c-10 -29 -17 -73 -17 -99 l0 -45 378
+163 c719 311 645 275 660 319 10 30 10 46 0 72 -9 26 -9 36 1 48 11 13 11 16
+0 15 -8 0 -237 -95 -510 -211z" />
+                    <path d="M3618 3615 c-3 -3 -228 -102 -499 -219 l-494 -214 -3 -62 -3 -62 28
+6 c15 4 204 54 418 112 441 118 415 106 486 237 37 68 89 184 89 198 0 10 -14
+12 -22 4z" />
+                    <path d="M3165 2625 c-335 -47 -710 -97 -735 -98 -32 -2 -84 -90 -124 -208
+-16 -46 -49 -128 -73 -182 -25 -54 -43 -100 -41 -102 2 -3 117 -43 254 -89
+137 -46 256 -87 264 -90 11 -4 31 14 65 60 28 37 106 116 174 175 101 89 154
+126 292 205 92 53 173 102 179 109 8 10 8 19 1 34 -6 11 -11 29 -11 41 0 25
+-59 170 -68 169 -4 0 -83 -11 -177 -24z" />
+                    <path d="M2128 1863 c-35 -106 -119 -277 -165 -337 -31 -40 -50 -54 -98 -71
+-122 -44 -210 -104 -228 -157 -16 -45 50 -61 187 -46 129 14 276 62 441 145
+130 65 160 85 223 146 79 78 180 225 159 232 -97 34 -484 165 -488 165 -3 0
+-17 -35 -31 -77z" />
+                </g>
+            </svg>
+        </label>
+    </div>
+    <div style="text-align: center;    display: flex;cursor: pointer;" onclick="ClickClass(1,'svg_soldier')">
+        <label style="margin-right: 20px;">
+
+            <span>Solider</span>
+            <br>
+            <input type="checkbox" id="1" style="display: none;">
+            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="60.000000pt" height="60.000000pt"
+                viewBox="0 0 540.000000 540.000000" preserveAspectRatio="xMidYMid meet">
+
+                <g fill="white" id='svg_soldier' transform="translate(0.000000,540.000000) scale(0.100000,-0.100000)"
+                    fill="#000000" stroke="none">
+                    <path d="M2530 4734 c-14 -2 -65 -9 -115 -15 -408 -51 -822 -253 -1134 -554
+-316 -305 -518 -693 -598 -1150 -24 -140 -24 -490 0 -630 80 -457 282 -845
+598 -1150 306 -295 668 -476 1104 -552 140 -24 490 -24 630 0 436 76 798 257
+1104 552 316 305 518 693 598 1150 24 140 24 490 0 630 -80 457 -282 845 -598
+1150 -304 294 -673 478 -1099 550 -90 16 -434 29 -490 19z m439 -120 c708
+-104 1296 -578 1544 -1244 99 -266 147 -617 116 -845 -68 -499 -231 -851 -538
+-1168 -170 -176 -321 -287 -536 -393 -548 -272 -1185 -270 -1728 5 -87 44
+-132 72 -131 82 1 9 123 167 273 352 149 184 271 339 271 344 0 10 -328 298
+-340 298 -5 0 -131 -146 -280 -325 -150 -179 -282 -335 -295 -348 l-22 -24
+-78 94 c-505 602 -606 1418 -261 2113 108 216 217 366 393 536 296 287 687
+476 1093 528 115 15 404 12 519 -5z" />
+                    <path d="M3588 4112 l-86 -67 -13 -64 c-7 -35 -18 -65 -25 -68 -6 -2 -35 0
+-63 5 l-52 9 -404 -360 c-223 -198 -402 -364 -399 -369 3 -4 89 -80 192 -167
+103 -87 270 -229 371 -315 114 -97 188 -153 194 -147 5 5 55 89 111 187 56 99
+170 298 254 444 l152 265 8 90 7 90 50 25 c45 23 55 34 97 115 26 50 47 95 48
+101 0 12 -332 294 -346 294 -5 0 -48 -31 -96 -68z" />
+                    <path d="M2368 3062 c-42 -37 -77 -70 -77 -74 -2 -13 801 -720 808 -712 4 5
+40 46 81 92 62 70 71 85 59 96 -28 26 -775 652 -785 658 -6 4 -45 -23 -86 -60z" />
+                    <path d="M2277 2707 c-13 -155 -29 -127 176 -303 100 -86 190 -164 199 -172
+16 -13 29 -12 125 13 60 16 113 31 120 34 10 5 -176 161 -567 473 l-47 37 -6
+-82z" />
+                    <path d="M2112 2418 c-21 -40 -61 -113 -87 -162 l-48 -89 49 -46 c161 -150
+295 -261 307 -255 65 40 286 208 280 214 -28 24 -404 359 -429 383 l-32 29
+-40 -74z" />
+                </g>
+            </svg>
+
+        </label>
+    </div>
+    <div style="text-align: center;    display: flex;" onclick="ClickClass(2,'svg_pyro')">
+        <label style="margin-right: 20px;">
+
+            <span>Pyro</span>
+            <br>
+            <input type="checkbox" id="2" style="display: none;">
+            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="60.000000pt" height="60.000000pt"
+                viewBox="0 0 540.000000 540.000000" preserveAspectRatio="xMidYMid meet">
+
+                <g id='svg_pyro' fill="white" transform="translate(0.000000,540.000000) scale(0.100000,-0.100000)"
+                    fill="#000000" stroke="none">
+                    <path d="M2530 4734 c-14 -2 -65 -9 -115 -15 -408 -51 -822 -253 -1134 -554
+-316 -305 -518 -693 -598 -1150 -24 -140 -24 -490 0 -630 80 -457 282 -845
+598 -1150 306 -295 668 -476 1104 -552 140 -24 490 -24 630 0 436 76 798 257
+1104 552 316 305 518 693 598 1150 24 140 24 490 0 630 -80 457 -282 845 -598
+1150 -304 294 -673 478 -1099 550 -90 16 -434 29 -490 19z m439 -120 c628 -92
+1167 -476 1450 -1033 108 -213 164 -393 200 -649 32 -219 28 -326 -21 -597
+-104 -576 -490 -1091 -1022 -1361 l-111 -57 65 69 c109 115 194 241 293 434
+128 249 195 475 215 725 14 166 -7 318 -60 453 -68 172 -78 387 -24 537 11 29
+-61 -53 -83 -95 -35 -67 -91 -286 -91 -357 0 -47 -47 -208 -81 -278 -38 -76
+-158 -198 -226 -229 -80 -36 -154 2 -200 103 -22 48 -26 71 -27 161 0 58 5
+141 12 185 6 44 17 150 23 236 11 146 10 165 -11 290 -12 74 -29 159 -37 189
+-23 88 -104 269 -150 335 -23 33 -56 80 -72 105 -26 40 -320 331 -411 407 -33
+27 -135 91 -226 140 -62 33 -172 75 -185 71 -7 -2 17 -27 53 -56 112 -89 174
+-185 222 -345 39 -128 44 -229 16 -346 -33 -140 -89 -297 -167 -471 -121 -269
+-190 -438 -230 -565 -12 -39 -42 -43 -78 -12 -21 18 -30 36 -35 79 -10 74 -49
+151 -109 219 -37 42 -70 65 -135 97 -83 40 -164 68 -172 59 -3 -2 28 -37 68
+-78 62 -63 77 -85 98 -144 23 -65 25 -84 25 -260 0 -104 -6 -255 -13 -335 -13
+-149 -12 -165 28 -445 24 -178 56 -294 133 -495 57 -149 225 -371 346 -459
+l46 -33 -40 7 c-22 4 -93 24 -159 46 -311 102 -623 308 -837 552 -524 598
+-636 1437 -285 2142 108 216 217 366 393 536 296 287 687 476 1093 528 115 15
+404 12 519 -5z" />
+                </g>
+            </svg>
+
+        </label>
+    </div>
+    <div style="text-align: center;    display: flex;" onclick="ClickClass(3,'svg_demoman')">
+        <label style="margin-right: 20px;">
+
+            <span>Demoman</span>
+            <br>
+            <input type="checkbox" id="3" style="display: none;">
+            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="60.000000pt" height="60.000000pt"
+                viewBox="0 0 540.000000 540.000000" preserveAspectRatio="xMidYMid meet">
+
+                <g id='svg_demoman' fill="white" transform="translate(0.000000,540.000000) scale(0.100000,-0.100000)"
+                    fill="#000000" stroke="none">
+                    <path d="M2530 4734 c-14 -2 -65 -9 -115 -15 -408 -51 -822 -253 -1134 -554
+-316 -305 -518 -693 -598 -1150 -24 -140 -24 -490 0 -630 80 -457 282 -845
+598 -1150 306 -295 668 -476 1104 -552 140 -24 490 -24 630 0 436 76 798 257
+1104 552 316 305 518 693 598 1150 24 140 24 490 0 630 -80 457 -282 845 -598
+1150 -304 294 -673 478 -1099 550 -90 16 -434 29 -490 19z m439 -120 c708
+-104 1296 -578 1544 -1244 99 -266 147 -617 116 -845 -68 -499 -231 -851 -538
+-1168 -170 -176 -321 -287 -536 -393 -623 -309 -1357 -262 -1931 125 -225 151
+-385 311 -535 535 -387 575 -434 1309 -125 1931 108 216 217 366 393 536 296
+287 687 476 1093 528 115 15 404 12 519 -5z" />
+                    <path d="M2475 4088 c-2 -7 -18 -81 -35 -165 -16 -83 -34 -163 -40 -178 -16
+-42 -12 -90 10 -118 48 -61 198 -74 295 -24 62 31 84 55 91 98 4 28 -2 43 -31
+83 -56 78 -285 318 -290 304z" />
+                    <path d="M3123 3926 c-100 -66 -182 -124 -182 -128 -1 -3 32 -16 72 -28 86
+-26 196 -76 278 -126 33 -20 61 -35 63 -33 2 2 -5 87 -15 189 -10 102 -18 200
+-18 218 -1 17 -4 31 -8 31 -5 -1 -90 -56 -190 -123z" />
+                    <path d="M2835 3715 c0 -67 -34 -113 -112 -151 -50 -25 -69 -28 -152 -29 -81
+0 -103 4 -139 23 -51 27 -82 74 -82 124 l0 38 -52 -21 c-68 -26 -180 -87 -215
+-116 l-28 -22 53 -1 c393 -2 1208 -369 1548 -696 33 -33 71 -72 83 -88 11 -16
+23 -27 26 -25 12 12 -41 284 -54 276 -81 -44 -124 -45 -197 -2 -51 30 -98 103
+-115 180 -15 69 11 151 58 180 18 11 32 25 33 32 0 16 -147 145 -213 187 -114
+73 -273 136 -387 154 l-56 8 1 -51z" />
+                    <path d="M1997 3429 c-68 -8 -77 -13 -47 -29 100 -54 38 -334 -104 -469 -68
+-63 -116 -78 -169 -52 -20 10 -39 15 -42 11 -3 -4 -8 -46 -11 -92 l-7 -85 89
+-7 c373 -28 992 -288 1392 -583 79 -58 214 -186 248 -236 l20 -29 72 67 c40
+37 72 71 72 75 0 5 -9 12 -21 15 -27 9 -58 79 -59 131 0 50 29 163 59 224 41
+88 133 173 200 186 l30 6 -21 42 c-77 152 -300 336 -622 515 -376 208 -834
+340 -1079 310z m870 -295 c215 -103 265 -370 102 -548 -68 -74 -149 -110 -249
+-110 -223 -1 -398 210 -346 414 31 119 91 202 180 245 108 53 201 53 313 -1z" />
+                    <path d="M2593 3085 c-64 -32 -135 -109 -151 -163 -20 -66 -15 -160 12 -217
+51 -109 143 -168 262 -168 262 0 386 309 199 495 -55 55 -98 72 -190 76 -71 3
+-86 0 -132 -23z" />
+                    <path d="M1547 3400 c-114 -4 -210 -9 -213 -12 -3 -3 67 -101 155 -217 89
+-116 161 -215 161 -221 0 -19 66 -43 96 -36 41 10 136 111 166 176 27 58 48
+141 48 191 0 75 -69 130 -157 127 -26 -1 -141 -4 -256 -8z" />
+                    <path d="M3478 3357 c-72 -67 -55 -205 36 -285 38 -33 90 -48 128 -37 12 4 43
+26 67 49 60 57 230 230 228 232 -1 1 -87 14 -192 28 -104 15 -202 29 -216 32
+-18 3 -33 -2 -51 -19z" />
+                    <path d="M1634 2528 c3 -29 11 -70 17 -91 l10 -38 26 21 c102 80 261 14 330
+-137 19 -41 26 -72 25 -115 -1 -82 -25 -126 -89 -164 l-52 -31 24 -23 c25 -23
+26 -23 39 -5 20 28 143 33 222 10 177 -51 345 -193 331 -280 -5 -30 -3 -33 25
+-39 17 -3 44 -6 60 -6 27 0 29 3 23 23 -4 12 -10 45 -12 72 -4 44 0 55 27 92
+20 27 51 52 88 70 49 24 69 28 142 28 98 0 145 -19 200 -81 30 -34 32 -42 27
+-85 l-6 -48 27 10 c55 21 132 71 132 86 0 23 -184 200 -279 267 -193 138 -432
+266 -668 360 -237 94 -485 156 -621 156 l-55 0 7 -52z" />
+                    <path d="M3637 2483 c-60 -42 -124 -146 -147 -238 -24 -91 -20 -144 13 -180
+21 -23 24 -23 122 -15 55 5 154 10 220 11 66 1 149 4 184 8 l63 6 -147 195
+c-81 107 -158 205 -171 218 -35 31 -89 29 -137 -5z" />
+                    <path d="M1733 2400 c-12 -5 -30 -22 -39 -37 -10 -15 -71 -85 -136 -154 l-118
+-127 33 -6 c17 -3 116 -17 218 -31 215 -29 246 -26 287 35 20 30 23 44 20 101
+-4 80 -41 148 -105 193 -45 31 -120 44 -160 26z" />
+                    <path d="M2011 1923 l-24 -16 7 -261 c4 -144 9 -280 12 -304 l6 -42 23 17
+c103 79 340 266 382 303 58 49 66 77 38 130 -18 35 -100 102 -164 135 -107 53
+-234 71 -280 38z" />
+                    <path d="M2752 1844 c-84 -42 -122 -118 -89 -180 24 -45 315 -330 326 -319 5
+6 19 81 31 169 12 87 26 170 31 185 47 123 -151 219 -299 145z" />
+                </g>
+            </svg>
+
+        </label>
+    </div>
+    <div style="text-align: center;    display: flex;" onclick="ClickClass(4,'svg_heavy')">
+        <label style="margin-right: 20px;">
+
+            <span>Heavy</span>
+            <br>
+            <input type="checkbox" id="4" style="display: none;">
+            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="60.000000pt" height="60.000000pt"
+                viewBox="0 0 540.000000 540.000000" preserveAspectRatio="xMidYMid meet">
+
+                <g id='svg_heavy' fill="white" transform="translate(0.000000,540.000000) scale(0.100000,-0.100000)"
+                    fill="#000000" stroke="none">
+                    <path d="M2530 4734 c-14 -2 -65 -9 -115 -15 -408 -51 -822 -253 -1134 -554
+-316 -305 -518 -693 -598 -1150 -24 -140 -24 -490 0 -630 80 -457 282 -845
+598 -1150 306 -295 668 -476 1104 -552 140 -24 490 -24 630 0 436 76 798 257
+1104 552 316 305 518 693 598 1150 24 140 24 490 0 630 -80 457 -282 845 -598
+1150 -304 294 -673 478 -1099 550 -90 16 -434 29 -490 19z m439 -120 c708
+-104 1296 -578 1544 -1244 99 -266 147 -617 116 -845 -68 -499 -231 -851 -538
+-1168 -170 -176 -321 -287 -536 -393 -623 -309 -1357 -262 -1931 125 -225 151
+-385 311 -535 535 -387 575 -434 1309 -125 1931 108 216 217 366 393 536 296
+287 687 476 1093 528 115 15 404 12 519 -5z" />
+                    <path d="M3817 3903 c-52 -92 -94 -169 -93 -171 4 -3 308 168 323 182 10 9 -3
+28 -60 84 l-74 73 -96 -168z" />
+                    <path d="M1415 3990 c-38 -38 -67 -71 -64 -73 16 -14 331 -188 334 -186 6 7
+-180 329 -190 329 -6 0 -42 -31 -80 -70z" />
+                    <path d="M2595 3945 c-55 -12 -140 -30 -188 -40 -101 -21 -79 -2 -298 -249
+-123 -139 -126 -141 -317 -265 -106 -70 -254 -166 -329 -216 l-137 -90 -81
+-192 c-45 -106 -80 -194 -79 -196 2 -1 15 -59 29 -127 14 -69 30 -134 34 -146
+6 -12 43 -37 92 -61 91 -44 111 -63 183 -166 l47 -67 72 38 c40 20 71 42 70
+47 -1 6 -38 91 -83 189 -48 108 -78 187 -75 197 4 10 75 159 159 332 128 261
+160 317 190 340 20 16 36 26 36 23 0 -6 -83 -180 -225 -471 -59 -121 -108
+-225 -108 -230 0 -11 152 -355 163 -368 3 -4 162 160 352 365 191 205 362 389
+382 408 34 32 37 33 53 17 16 -16 14 -20 -38 -75 -31 -31 -143 -151 -251 -267
+-107 -115 -254 -274 -326 -351 -73 -78 -132 -146 -132 -152 0 -11 99 -139 175
+-227 39 -45 70 -69 124 -94 63 -31 72 -33 83 -19 58 73 753 808 762 805 25 -8
+15 -41 -26 -85 -223 -242 -658 -712 -676 -730 -13 -13 -21 -26 -19 -29 17 -16
+442 -213 452 -209 7 2 138 136 291 298 153 161 283 293 288 293 5 0 13 -7 19
+-16 9 -14 -38 -68 -266 -308 -152 -161 -277 -295 -277 -299 0 -6 296 -155 312
+-156 4 -1 637 475 917 690 10 8 60 321 54 335 -5 9 -44 66 -88 128 l-80 112
+-57 -5 c-32 -2 -58 -1 -58 2 0 6 51 207 66 258 4 15 -15 47 -76 125 -45 57
+-88 109 -95 115 -8 6 -59 16 -114 23 l-100 13 5 122 6 121 -82 82 c-82 82 -82
+82 -143 88 -152 14 -141 10 -170 73 -15 31 -35 79 -44 106 -17 47 -22 51 -138
+117 -66 38 -124 68 -130 68 -5 -1 -55 -11 -110 -24z" />
+                    <path d="M3722 1692 c10 -25 181 -323 187 -327 4 -2 40 29 80 69 l73 74 -23
+15 c-39 24 -311 177 -316 177 -3 0 -3 -4 -1 -8z" />
+                    <path d="M1520 1604 c-80 -46 -149 -86 -155 -88 -5 -2 24 -38 65 -80 l76 -77
+87 154 c82 144 97 178 80 176 -5 0 -73 -38 -153 -85z" />
+                </g>
+            </svg>
+
+        </label>
+    </div>
+    <div style="text-align: center;    display: flex;" onclick="ClickClass(5,'svg_engineer')">
+        <label style="margin-right: 20px;">
+
+            <span>Engineer</span>
+            <br>
+            <input type="checkbox" id="5" style="display: none;">
+            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="60.000000pt" height="60.000000pt"
+                viewBox="0 0 540.000000 540.000000" preserveAspectRatio="xMidYMid meet">
+
+                <g id='svg_engineer' fill="white" transform="translate(0.000000,540.000000) scale(0.100000,-0.100000)"
+                    fill="#000000" stroke="none">
+                    <path d="M2530 4734 c-14 -2 -65 -9 -115 -15 -408 -51 -822 -253 -1134 -554
+-316 -305 -518 -693 -598 -1150 -24 -140 -24 -490 0 -630 80 -457 282 -845
+598 -1150 306 -295 668 -476 1104 -552 140 -24 490 -24 630 0 436 76 798 257
+1104 552 316 305 518 693 598 1150 24 140 24 490 0 630 -80 457 -282 845 -598
+1150 -304 294 -673 478 -1099 550 -90 16 -434 29 -490 19z m439 -120 c708
+-104 1296 -578 1544 -1244 99 -266 147 -617 116 -845 -68 -499 -231 -851 -538
+-1168 -170 -176 -321 -287 -536 -393 -623 -309 -1357 -262 -1931 125 -225 151
+-385 311 -535 535 -387 575 -434 1309 -125 1931 108 216 217 366 393 536 296
+287 687 476 1093 528 115 15 404 12 519 -5z" />
+                    <path d="M1900 4313 c0 -6 17 -30 38 -54 21 -24 101 -118 177 -209 76 -91 144
+-172 151 -180 11 -14 -26 -48 -277 -260 -160 -135 -294 -246 -298 -248 -4 -1
+-95 101 -202 228 -107 126 -197 230 -200 230 -3 0 -12 -39 -19 -86 -63 -427
+286 -808 718 -781 48 3 94 8 103 11 12 6 113 -107 419 -471 222 -263 411 -487
+422 -499 18 -20 18 -24 2 -90 -34 -145 -1 -327 82 -453 123 -185 341 -294 555
+-276 42 4 81 10 87 13 6 4 -60 90 -163 212 -96 113 -173 208 -172 212 1 4 95
+86 209 183 l208 175 172 -205 c95 -112 176 -201 180 -197 3 4 14 45 24 91 54
+270 -81 541 -328 660 -96 46 -178 63 -290 60 l-80 -2 -419 496 -420 497 23 72
+c19 60 23 95 22 198 0 108 -4 136 -27 205 -57 171 -190 323 -352 400 -49 24
+-112 48 -138 54 -72 17 -207 26 -207 14z" />
+                </g>
+            </svg>
+
+        </label>
+    </div>
+    <div style="text-align: center;    display: flex;" onclick="ClickClass(6,'svg_medic')">
+        <label style="margin-right: 20px;">
+
+            <span>Medic</span>
+            <br>
+            <input type="checkbox" id="6" style="display: none;">
+            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="60.000000pt" height="60.000000pt"
+                viewBox="0 0 540.000000 540.000000" preserveAspectRatio="xMidYMid meet">
+
+                <g id='svg_medic' fill="white" transform="translate(0.000000,540.000000) scale(0.100000,-0.100000)"
+                    fill="#000000" stroke="none">
+                    <path d="M2530 4734 c-14 -2 -65 -9 -115 -15 -408 -51 -822 -253 -1134 -554
+-316 -305 -518 -693 -598 -1150 -24 -140 -24 -490 0 -630 80 -457 282 -845
+598 -1150 306 -295 668 -476 1104 -552 140 -24 490 -24 630 0 436 76 798 257
+1104 552 316 305 518 693 598 1150 24 140 24 490 0 630 -80 457 -282 845 -598
+1150 -304 294 -673 478 -1099 550 -90 16 -434 29 -490 19z m439 -120 c708
+-104 1296 -578 1544 -1244 99 -266 147 -617 116 -845 -68 -499 -231 -851 -538
+-1168 -170 -176 -321 -287 -536 -393 -623 -309 -1357 -262 -1931 125 -225 151
+-385 311 -535 535 -387 575 -434 1309 -125 1931 108 216 217 366 393 536 296
+287 687 476 1093 528 115 15 404 12 519 -5z" />
+                    <path d="M2070 3760 l0 -410 -410 0 -410 0 2 -632 3 -633 408 -3 407 -2 0
+-410 0 -410 629 0 c573 0 629 1 635 16 4 9 6 193 6 408 l-1 391 408 5 408 5 0
+630 0 630 -407 3 c-316 2 -408 5 -408 15 0 6 -1 190 -3 407 l-2 395 -632 3
+-633 2 0 -410z" />
+                </g>
+            </svg>
+        </label>
+    </div>
+    <div style="text-align: center;    display: flex;" onclick="ClickClass(7,'svg_sniper')">
+        <label style="margin-right: 20px;">
+
+            <span>Sniper</span>
+            <br>
+            <input type="checkbox" id="7" style="display: none;">
+            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="60.000000pt" height="60.000000pt"
+                viewBox="0 0 540.000000 540.000000" preserveAspectRatio="xMidYMid meet">
+
+                <g id='svg_sniper' fill="white" transform="translate(0.000000,540.000000) scale(0.100000,-0.100000)"
+                    fill="#000000" stroke="none">
+                    <path d="M2530 4734 c-14 -2 -65 -9 -115 -15 -408 -51 -822 -253 -1134 -554
+-316 -305 -518 -693 -598 -1150 -24 -140 -24 -490 0 -630 80 -457 282 -845
+598 -1150 306 -295 668 -476 1104 -552 140 -24 490 -24 630 0 436 76 798 257
+1104 552 316 305 518 693 598 1150 24 140 24 490 0 630 -80 457 -282 845 -598
+1150 -304 294 -673 478 -1099 550 -90 16 -434 29 -490 19z m439 -120 c708
+-104 1296 -578 1544 -1244 99 -266 147 -617 116 -845 -68 -499 -231 -851 -538
+-1168 -170 -176 -321 -287 -536 -393 -623 -309 -1357 -262 -1931 125 -225 151
+-385 311 -535 535 -387 575 -434 1309 -125 1931 108 216 217 366 393 536 296
+287 687 476 1093 528 115 15 404 12 519 -5z" />
+                    <path d="M2510 4240 c-556 -77 -1015 -430 -1223 -940 -77 -187 -108 -354 -108
+-570 0 -228 37 -410 125 -609 201 -458 595 -775 1096 -882 140 -30 436 -33
+575 -5 318 63 567 197 796 425 229 230 364 483 425 801 27 143 25 419 -5 560
+-68 319 -195 556 -420 781 -226 225 -471 358 -780 420 -111 23 -379 33 -481
+19z m130 -498 l0 -338 -67 -11 c-109 -19 -224 -82 -314 -172 -41 -42 -89 -101
+-106 -131 -28 -48 -62 -150 -78 -232 l-5 -28 -343 0 c-320 0 -344 2 -367 19
+l-24 19 13 79 c66 394 309 746 657 952 169 99 418 177 582 180 l52 1 0 -338z
+m285 322 c486 -84 900 -438 1055 -902 31 -94 62 -234 64 -291 l1 -36 -358 -3
+c-281 -2 -358 0 -361 10 -2 7 -8 40 -15 73 -6 33 -29 98 -52 145 -82 165 -252
+297 -429 332 -36 7 -67 15 -70 19 -3 4 -4 156 -2 338 l3 331 37 0 c20 0 78 -7
+127 -16z m-285 -979 l0 -255 -261 0 -262 0 7 43 c20 133 114 279 234 364 67
+48 201 102 255 103 l27 0 0 -255z m221 239 c196 -58 352 -220 404 -419 8 -32
+11 -63 7 -67 -5 -5 -122 -7 -261 -6 l-252 3 0 248 c1 136 1 249 1 252 0 10 47
+5 101 -11z m-786 -631 c18 -91 51 -186 85 -244 82 -139 252 -260 410 -292 l65
+-13 0 -389 0 -390 -55 3 c-84 5 -239 39 -337 73 -509 178 -872 653 -910 1189
+l-6 90 371 0 372 0 5 -27z m565 -238 c0 -302 9 -277 -94 -250 -147 39 -290
+150 -358 281 -40 76 -68 162 -68 206 l0 28 260 0 260 0 0 -265z m635 255 c10
+-16 -23 -137 -57 -207 -48 -99 -159 -209 -258 -256 -74 -34 -169 -62 -190 -55
+-7 2 -11 87 -11 261 1 141 1 259 1 262 0 10 509 5 515 -5z m773 -41 c2 -25 -4
+-90 -12 -145 -79 -521 -446 -947 -951 -1103 -75 -23 -208 -49 -278 -53 l-47
+-3 0 389 c0 214 1 390 2 390 2 1 32 8 68 15 177 34 347 166 429 331 22 47 46
+112 52 145 6 33 13 66 15 73 3 10 80 12 361 10 l358 -3 3 -46z" />
+                </g>
+            </svg>
+        </label>
+    </div>
+    <div style="text-align: center;    display: flex;" onclick="ClickClass(8,'svg_spy')">
+        <label style="margin-right: 20px;">
+
+            <span>Spy</span>
+            <br>
+            <input type="checkbox" id="8" style="display: none;"> <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+                width="60.000000pt" height="60.000000pt" viewBox="0 0 540.000000 540.000000"
+                preserveAspectRatio="xMidYMid meet">
+
+                <g id='svg_spy' fill="white" transform="translate(0.000000,540.000000) scale(0.100000,-0.100000)"
+                    fill="#000000" stroke="none">
+                    <path d="M2445 4719 c-353 -48 -717 -201 -990 -414 -390 -305 -645 -718 -752
+-1221 -26 -122 -27 -144 -27 -384 0 -240 1 -262 27 -384 76 -354 224 -663 446
+-927 291 -349 693 -585 1167 -686 122 -26 144 -27 384 -27 240 0 262 1 384 27
+474 101 876 337 1167 686 222 264 370 573 446 927 26 122 27 144 27 384 0 240
+-1 262 -27 384 -76 354 -224 663 -446 927 -290 347 -695 586 -1162 684 -108
+23 -153 27 -349 30 -124 2 -256 -1 -295 -6z m651 -122 c520 -117 945 -411
+1234 -852 206 -315 324 -746 307 -1120 -46 -975 -777 -1754 -1741 -1856 -136
+-15 -398 -6 -526 16 -294 53 -589 178 -825 352 -116 85 -323 292 -408 408
+-174 236 -299 531 -352 825 -22 128 -31 390 -16 526 61 581 378 1104 861 1420
+228 149 470 245 745 295 84 16 140 18 355 15 228 -4 267 -7 366 -29z" />
+                    <path d="M1732 4033 c6 -147 51 -390 99 -537 52 -156 164 -355 307 -545 86
+-114 277 -315 400 -419 34 -29 62 -59 62 -65 0 -7 -32 -32 -71 -55 -47 -30
+-67 -48 -61 -55 4 -7 21 -45 36 -84 15 -40 30 -73 32 -73 2 0 45 21 95 46 79
+39 93 43 109 32 10 -7 87 -105 171 -218 84 -113 203 -270 264 -350 179 -232
+212 -290 237 -412 11 -57 22 -104 23 -106 2 -2 41 4 87 13 69 14 111 32 252
+109 92 50 170 96 173 102 2 6 -17 46 -43 89 -108 184 -243 363 -502 668 l-272
+322 67 33 c38 19 70 36 72 38 8 7 -173 202 -183 197 -6 -4 -35 -22 -64 -40
+-29 -19 -57 -31 -64 -27 -12 7 -176 343 -199 408 -11 29 -44 64 -144 150 -214
+185 -356 322 -495 481 -73 83 -175 197 -229 255 -53 58 -108 120 -123 138 -15
+17 -30 32 -34 32 -3 0 -4 -57 -2 -127z" />
+                </g>
+            </svg>
+
+        </label>
+
+    </div>
+
+</div>
+
+<div id='SettingsRandom'>
+    <label style="margin-right: 20px;margin-right: 20px;">
+        <span>Include unused attributes</span>
+        <input type="checkbox" id="9" onclick="UsedSecert = this.checked" checked>
+        <br>
+
+    </label><br>
+    <label style="margin-right: 20px;margin-right: 20px;">
+        <span>Give the weapon a weapon with normal stats</span>
+        <input type="checkbox" id="10" onclick="OnlyBasics = this.checked">
+        <br>
+
+    </label>
+    <div style="
+    margin-top: 20px;
+        margin-bottom: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    
+    ">
+            <div style="text-align: center;    display: flex;">
+                <label style="margin-right: 20px;">
+    
+                    <span>Primary(Slot 1)</span>
+                    <br>
+                    <input type="checkbox" id="11" checked onclick="SlotPrimer = this.checked">
+                </label>
+            </div>
+            <div style="text-align: center;    display: flex;">
+                <label style="margin-right: 20px;">
+    
+                    <span>Secondary(Slot 2)</span>
+                    <br>
+                    <input type="checkbox" id="12" checked onclick="SlotSecond = this.checked">
+                </label>
+            </div>
+            <div style="text-align: center;    display: flex;">
+                <label style="margin-right: 20px;">
+    
+                    <span>Melee (Slot 3,4,...)</span>
+                    <br>
+                    <input type="checkbox" id="13" checked onclick="SlotMelee= this.checked">
+                </label>
+            </div>
+        </div>
+    </div>
+    <label style="margin-right: 20px;margin-right: 20px;">
+        <span>Issue weapons : </span>
+
+        <br>
+        <br>
+        <input type="radio" id="15" name='radio' onclick="GiveValue = '@me'">
+        <label style=" font-size: 20px;
+    font-family: 'Roboto', system-ui;
+    font-weight: bold;
+    background: rgb(254,247,229);
+background: -moz-linear-gradient(180deg, rgba(254,247,229,1) 0%, rgb(189, 173, 153) 100%);
+background: -webkit-linear-gradient(180deg, rgba(254,247,229,1) 0%, rgb(189, 173, 153) 100%);
+background: linear-gradient(180deg, rgba(254,247,229,1) 0%, rgb(189, 173, 153) 100%);
+
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;">Me</label>
+        <br>
+        <input type="radio" id="16" name='radio' onclick="GiveValue = '@all'" checked>
+        <label style=" font-size: 20px;
+    font-family: 'Roboto', system-ui;
+    font-weight: bold;
+    background: rgb(254,247,229);
+background: -moz-linear-gradient(180deg, rgba(254,247,229,1) 0%, rgb(189, 173, 153) 100%);
+background: -webkit-linear-gradient(180deg, rgba(254,247,229,1) 0%, rgb(189, 173, 153) 100%);
+background: linear-gradient(180deg, rgba(254,247,229,1) 0%, rgb(189, 173, 153) 100%);
+
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;">All</label>
+        <br>
+        <input type="radio" id="17" name='radio' onclick="GiveValue = '@alive'">
+        <label style=" font-size: 20px;
+    font-family: 'Roboto', system-ui;
+    font-weight: bold;
+    background: rgb(254,247,229);
+background: -moz-linear-gradient(180deg, rgba(254,247,229,1) 0%, rgb(189, 173, 153) 100%);
+background: -webkit-linear-gradient(180deg, rgba(254,247,229,1) 0%, rgb(189, 173, 153) 100%);
+background: linear-gradient(180deg, rgba(254,247,229,1) 0%, rgb(189, 173, 153) 100%);
+
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;">Alive</label>
+
+    </label>
+    <br>
+    <input type="radio" id="18" name='radio' onclick="GiveValue = '@red'">
+    <label style=" font-size: 20px;
+font-family: 'Roboto', system-ui;
+font-weight: bold;
+background: rgb(254,247,229);
+background: -moz-linear-gradient(180deg, rgba(254,247,229,1) 0%, rgb(189, 173, 153) 100%);
+background: -webkit-linear-gradient(180deg, rgba(254,247,229,1) 0%, rgb(189, 173, 153) 100%);
+background: linear-gradient(180deg, rgba(254,247,229,1) 0%, rgb(189, 173, 153) 100%);
+
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;">Red team</label>
+    <br>
+    </label>
+    <input type="radio" id="19" name='radio' onclick="GiveValue = '@blue'">
+    <label style=" font-size: 20px;
+font-family: 'Roboto', system-ui;
+font-weight: bold;
+background: rgb(254,247,229);
+background: -moz-linear-gradient(180deg, rgba(254,247,229,1) 0%, rgb(189, 173, 153) 100%);
+background: -webkit-linear-gradient(180deg, rgba(254,247,229,1) 0%, rgb(189, 173, 153) 100%);
+background: linear-gradient(180deg, rgba(254,247,229,1) 0%, rgb(189, 173, 153) 100%);
+
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;">Blue team</label>
+    <br>
+    </label>
+
+    <!--
+<label style="margin-right: 20px;margin-bottom: 20px;">
+    <span>SLOT:</span>
+    <input placeholder="slot(empty means everything)">
+</label>
+-->
+
+<div><br><br><br>
+
+
+</div>
+<button onclick='CreateCustom(this)' id='Button_custom'>
+    Write your weapon
+</button>
+<b id="Text1"
+    style="font-size: 20px;font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;display: none;"></b><br>
+<br>
+<div style="max-width: 80%;margin: auto;background-color: #24201b;border-radius: 5px;padding:20px 0px ;display: none;word-break: break-all;"
+    id='ststu2'>
+    <div style="text-align:center">
+        <span id="s" style="font-size: 19px;text-align: center;"></span>
+    </div>
+</div>
+<br>
+<div style="text-align: center;">
+    <button onclick="gen()" id='Button_gen'>Generate</button>
+</div>
+<br>
+<div style="max-width: 50%;margin: auto;background-color: #24201b;border-radius: 5px;display: none;" id='ststua'>
+    <img id='icon_pref' style="display:none;max-width: 150px;max-height: 150px;text-align: center;" onload="this.style.display = ''" onerror="this.style.display = 'none'">
+    <br>
+    <h1 id='NameWeapon' style="color:#FFD700;text-align: center;">
+
+    </h1>
+    <hr>
+    <h3 id="ss"
+        style="font-size: 19px;word-break: break-all;max-width: 90%;margin: auto;text-align:   center;font-weight: 200;">
+      
+    </h3>
+    <br>
+</div>
+<br>
+
+
+<br>
+<div style="width: 90%;margin: auto;">
+    <b id="Text2"
+        style="font-size: 20px;font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;display: none;"></b><br>
+
+
+
+
+</div>
+<script>
+  //  alert('Ошибка в кнопке удаления (Неправильный Id)')
+    var classList = {
+        0: { name: 'svg_scout', ClassName: 'Scout' },
+        1: { name: 'svg_soldier', ClassName: 'Soldier' },
+        2: { name: 'svg_pyro', ClassName: 'Pyro' },
+        3: { name: 'svg_demoman', ClassName: 'Demoman' },
+        4: { name: 'svg_heavy', ClassName: 'Heavy' },
+        5: { name: 'svg_engineer', ClassName: 'Enginner' },
+        6: { name: 'svg_medic', ClassName: 'Medic' },
+        7: { name: 'svg_sniper', ClassName: 'Sniper' },
+        8: { name: 'svg_spy', ClassName: 'Spy' },
+    }
+    const compact = (coll) => {
+  // Инициализация результата
+  // Для пустой входной коллекции результатом будет пустой массив
+  const result = [];
+
+  for (const item of coll) {
+    if (item !== null) {
+      result.push(item);
+    }
+  }
+
+  return result;
+};
+    var AllPowerForCustom = []
+    var gggg = 0
+    var AttributeSelect = []
+    function DestroyAttribute(f,a,b,c){
+ 
+document.getElementById('Span_'+(a+1)).remove()
+console.log(AllPowerForCustom[a])
+//if(AllPowerForCustom[a] == undefined && a > AllPowerForCustom.length-1 ){
+    //AllPowerForCustom[AllPowerForCustom.length-1] = null
+//}else{
+AllPowerForCustom[AllPowerForCustom.indexOf(f)] = null
+//}
+b.remove()
+AttributeSelect[AttributeSelect.indexOf(c)] = null
+
+AllPowerForCustom = compact(AllPowerForCustom)
+AttributeSelect = compact(AttributeSelect)
+gggg--
+
+
+
+
+    }
+    function GenerateCommand(){
+document.getElementById('ststu2').style.display = ''
+document.getElementById('s').innerHTML = ''
+d = ''
+d += 'sm_gi '+ GiveValue + ' ' + document.getElementById('listWeapon').querySelector(':checked').getAttribute('data--weapon-index') + ' '
+d +=  document.getElementById('listWeapon').querySelector(':checked').getAttribute('data--weapon-class-slot')
+d += ' 1 1 1 0 ' 
+d+= document.getElementById('listWeapon').querySelector(':checked').getAttribute('data--weapon-class') + ' '
+for(var vd = 0;vd<AttributeSelect.length;vd++){
+    if(AttributeSelect[vd] !== null && AllPowerForCustom[vd] !== null){
+ d += '"' + AttributeSelect[vd] + ';' + AllPowerForCustom[vd] + '"'
+    }
+   
+}
+document.getElementById('s').innerHTML = d
+    }
+    function arrayRemove(arr, value) { 
+    
+    return arr.filter(function(ele){ 
+        return ele != value; 
+    });
+}
+    function AddOne(){
+        
+var x = document.getElementById("NumPower").value;
+var y = document.getElementById("listAttribute")
+
+var x2
+
+    if(document.getElementById('listAttribute').querySelector(':checked').getAttribute('data--used') == 'true'){
+       
+        
+        var Value = 0
+        for(var dc = 0 ;dc<AllAtribute.length;dc++){
+           // console.log(AllAtribute[dc][0] == document.getElementById('listAttribute').querySelector(':checked').getAttribute('data--id'))
+            if(AllAtribute[dc][0] == document.getElementById('listAttribute').querySelector(':checked').getAttribute('data--id')){
+                Value = AllAtribute[dc]
+              break
+            }
+        }
+        if(AttributeSelect.indexOf(Value[0]) !== -1){
+            alert('This attribute has already been added.')
+            return
+        }
+        if(isNaN(x) || x == '' || x < 0 || x > 100){
+    x= x2 = Math.round(Math.random() * 10) + 1;
+    }
+    x2 = x
+    AllPowerForCustom.push(Number(x))
+    gggg++
+        var color = '#ff0000';
+        if (Value[2] !== null && Value[2] !== 'no img') {
+                                if (Value[2]) {
+                                    color = '#76a0a8'
+                                }
+                                if (!Value[2]) {
+                                    color = '#FF4040'
+                                }
+                            } else {
+                                color = '#ded598'
+                            }
+                            AttributeSelect.push(Value[0])
+        document.getElementById('ss').innerHTML +='<span style="color:'+color+'" id="Span_'+gggg+'">' +  Value[1] + '</span><code style="color:White"  onclick="DestroyAttribute('+x2+','+(gggg-1)+',this,'+Value[0]+')">&#9932;<br></code>'
+    }
+    if(document.getElementById('listAttribute').querySelector(':checked').getAttribute('data--used') == 'false'){
+       
+        var Value = 0
+        for(var dc = 0 ;dc<Atribute_not_used_or_secret.length;dc++){
+                  // console.log(AllAtribute[dc][0] == document.getElementById('listAttribute').querySelector(':checked').getAttribute('data--id'))
+                  if(Atribute_not_used_or_secret[dc][0] == document.getElementById('listAttribute').querySelector(':checked').getAttribute('data--id')){
+                Value = Atribute_not_used_or_secret[dc]
+              break
+            }
+        }
+        if(AttributeSelect.indexOf(Value[0]) !== -1){
+            alert('This attribute has already been added.')
+            return
+        }
+        if(isNaN(x) || x == '' || x < 0 || x > 100){
+    x=x2 = Math.round(Math.random() * 10) + 1;
+    }
+    x2 = x
+    AllPowerForCustom.push(Number(x))
+    gggg++
+        var color = '#ff0000';
+        if (Value[2] !== null && Value[2] !== 'no img') {
+                                if (Value[2]) {
+                                    color = '#76a0a8'
+                                }
+                                if (!Value[2]) {
+                                    color = '#FF4040'
+                                }
+                            } else {
+                                color = '#ded598'
+                            }
+                            AttributeSelect.push(Value[0])
+        document.getElementById('ss').innerHTML += '<span style="color:'+color+'" id="Span_'+gggg+'">' + Value[1] + '<code style="color:red" onmousemove="MoveTitle()" onmouseover="SeeTitle()" onmouseout="DestroyTitle()">(&#9888;)</code></span><code style="color:White" onclick="DestroyAttribute('+x2+','+(gggg-1)+',this,'+Value[0]+')">&#9932;<br></code>'
+    }
+
+
+    for (var bv = 0; bv < gggg; bv++) {
+                    if (document.getElementById('ss').getElementsByTagName("span")[bv].getElementsByTagName("b")[0] !== undefined) {
+                        //  console.log(AllPower[bv])
+                        if (document.getElementById('ss').getElementsByTagName("span")[bv].getElementsByTagName("i")[0] !== undefined) {
+                            if (document.getElementById('ss').getElementsByTagName("span")[bv].getElementsByTagName("i")[0].innerHTML == '%') {
+                                document.getElementById('ss').getElementsByTagName("span")[bv].getElementsByTagName("b")[0].innerHTML = (100 * AllPowerForCustom[bv]) 
+                            } else {
+                                document.getElementById('ss').getElementsByTagName("span")[bv].getElementsByTagName("b")[0].innerHTML =AllPowerForCustom[bv]
+                            }
+                        } else {
+                            document.getElementById('ss').getElementsByTagName("span")[bv].getElementsByTagName("b")[0].innerHTML = AllPowerForCustom[bv]
+                        }
+
+                    }
+                }
+ }
+function RemoveAll(){
+    AttributeSelect = []
+    gggg = 0
+    AllPowerForCustom = []
+    document.getElementById('ss').innerHTML =''
+}
+    function CreateCustom(a) {
+        document.getElementById('Button_gen').style.display = 'none'
+        document.getElementById('Button_custom').innerHTML = 'Create a random weapon'
+        document.getElementById('SettingsRandom').style.display = 'none'
+        
+        CreCus = true
+        document.getElementById('NameWeapon').innerHTML =''
+       
+        document.getElementById('ststua').style.display = 'none'
+
+
+            document.getElementById('ststu2').style.display = 'none'
+        document.getElementById('s').innerHTML =''
+        document.getElementById('ss').innerHTML =''
+        document.getElementById('NameWeapon').innerHTML = '<select id="listWeapon" style="display: none;background:rgb(36, 32, 27);color:#b4b4b4;font-size:20px;width: 60%;"></select><br><br>'
+        document.getElementById('NameWeapon').innerHTML +='  <select id="listAttribute" style="max-width: 20%;"></select><input type="number" placeholder="1(Max. 99)" id="NumPower"><br><br><button onclick="AddOne()" id="" >Add</button><button onclick="RemoveAll()"  style="margin-left:10px;margin-top:10px;">Delete everything</button><br><br><button onclick="GenerateCommand()" style="margin-left:10px">Generate command</button>'
+      
+        for (var f = 0; f < AllAtribute.length; f++) {
+            var object = document.createElement('option')
+            var pos = document.getElementById('listAttribute')
+            object.innerHTML = AllAtribute[f][1]
+            object.dataset.Used = true
+            
+            object.dataset.Id = AllAtribute[f][0]
+            pos.appendChild(object)
+            //document.getElementById('listAttribute').innerHTML += '<option>' + AllAtribute[f][1] + '</option>'
+        }
+        for (var f = 0; f < Atribute_not_used_or_secret.length; f++) {
+            var object = document.createElement('option')
+            var pos = document.getElementById('listAttribute')
+            object.style.color = 'red'
+            object.dataset.Used = false
+            object.dataset.Id = Atribute_not_used_or_secret[f][0]
+            object.innerHTML = Atribute_not_used_or_secret[f][1] + '<code style="color:red" onmousemove="MoveTitle()" onmouseover="SeeTitle()" onmouseout="DestroyTitle()">(&#9888;)</code>'
+            pos.appendChild(object)
+            //document.getElementById('listAttribute').innerHTML += '<option>' + AllAtribute[f][1] + '</option>'
+        }
+        for (var i = 0; i < 9; i++) {
+
+            if (document.getElementById(i).checked) {
+                document.getElementById(i).checked = false
+
+                document.getElementById(classList[i].name).style.fill = 'white'
+            }
+        }
+
+
+            document.getElementById('Button_custom').onclick = function () {
+                document.getElementById('Button_gen').style.display = ''
+                CreCus = false
+                document.getElementById('SettingsRandom').style.display = ''
+                document.getElementById('NameWeapon').innerHTML = ''
+                 document.getElementById('ststua').style.display = 'none'
+            document.getElementById('ststu2').style.display = 'none'
+                document.getElementById('Button_custom').innerHTML = 'Write your weapon'
+                document.getElementById('Button_custom').setAttribute('onclick', 'CreateCustom(this)')
+            }
+        }
+        function ClickClass(IdClass, Svg_fill_id) {
+
+            var Val = IdClass
+            var Svg = Svg_fill_id
+            if (CreCus) {
+                var df = true
+document.getElementById('listWeapon').style.display = ''
+document.getElementById('ststua').style.display = ''
+                document.getElementById('listWeapon').innerHTML = ''
+                for (var i = 0; i < 9; i++) {
+                    if (i !== IdClass) {
+                        if (document.getElementById(i).checked) {
+                            document.getElementById(i).checked = false
+
+                            document.getElementById(classList[i].name).style.fill = 'white'
+                        }
+                    }
+                    if (!df) {
+
+                    }
+                }
+            }
+            if (!document.getElementById(Val).checked) {
+
+                document.getElementById(Val).checked = true;
+                if (Math.round(Math.random() * 100) < 50) {
+                    document.getElementById(Svg).style.fill = '#B8383B'
+                } else {
+                    document.getElementById(Svg).style.fill = ' #256D8D'
+                }
+            }
+            else {
+
+                document.getElementById(Val).checked = false;
+                document.getElementById(Svg).style.fill = 'white'
+
+            }
+            if (CreCus) {
+
+                for (var f = 0; f < All_weapon[IdClass].length; f++) {
+                    for (var f2 = 0; f2 < All_weapon[IdClass][f][1].length; f2++) {
+                        var object = document.createElement('option')
+                        var pos = document.getElementById('listWeapon')
+                        object.dataset.WeaponClass= All_weapon[IdClass][f][0]
+                        object.dataset.WeaponClassSlot = All_weapon[IdClass][f][2]
+                        object.dataset.WeaponIndex = All_weapon[IdClass][f][1][f2]
+                        object.innerHTML = WeaponName[All_weapon[IdClass][f][1][f2]].name
+                        pos.appendChild(object)
+                    }
+                }
+
+            }
+        }
+        var OnlyBasics = false
+        
+        var d = [
+
+        ]
+        let CreCus = false
+        var GiveValue = '@all'
+        var SlotPrimer = true
+        var SlotSecond = true
+        var SlotMelee = true
+
+        var hh
+        var AllPower = []
+        var AllAtribute = [
+        [1,"<b>%s1</b><i>%</i> damage penalty ",false]
+,[2,"+<b>%s1</b><i>%</i> damage bonus ",true]
+,[3,"<b>%s1</b><i>%</i> clip size ",false]
+,[4,"+<b>%s1</b><i>%</i> clip size ",true]
+,[5,"<b>%s1</b><i>%</i> slower firing speed ",false]
+,[6,"+<b>%s1</b><i>%</i> faster firing speed ",true]
+,[8,"+<b>%s1</b><i>%</i> heal rate ",true]
+,[10,"+<b>%s1</b><i>%</i> ÜberCharge rate ",true]
+,[15,"No random critical hits ",false]
+,[16,"On Hit: Gain up to +<b>%s1</b> health ",true]
+,[17,"On Hit: <b>%s1</b><i>%</i> ÜberCharge added ",true]
+,[18,"ÜberCharge grants 100% critical chance ",null]
+,[20,"100% critical hit vs burning players ",true]
+,[24,"100% critical hits from behind ",true]
+,[26,"+<b>%s1</b> max health on wearer ",true]
+,[31,"On Kill: <b>%s1</b> seconds of 100% critical chance ",true]
+,[32,"On Hit: <b>%s1</b><i>%</i> chance to slow target ",true]
+,[33,"Cloak Type: Feign Death. Leave a fake corpse on taking damage and temporarily gain invisibility, speed, and damage resistance. ",null]
+,[34,"+<b>%s1</b><i>%</i> cloak drain rate ",false]
+,[35,"+<b>%s1</b><i>%</i> cloak regen rate ",true]
+,[36,"<b>%s1</b><i>%</i> less accurate ",false]
+,[38,"Alt-Fire: Launches a ball that slows opponents ",true]
+,[41,"+<b>%s1</b><i>%</i> charge rate ",true]
+,[42,"No headshots ",false]
+,[44,"Knockback on the target and shooter ",true]
+,[45,"+<b>%s1</b><i>%</i> bullets per shot ",true]
+,[48,"Cloak Type: Motion Sensitive. Alt-fire: Turn invisible. Cannot attack while invisible. Bumping in to enemies will make you slightly visible to enemies. Cloak drain rate based on movement speed.  ",null]
+,[51,"Crits on headshot ",true]
+,[52,"Blocks a single backstab attempt ",true]
+,[54,"<b>%s1</b><i>%</i> slower move speed on wearer ",false]
+,[56,"Coated enemies take mini-crits Can be used to extinguish fire  ",null]
+,[57,"+<b>%s1</b> health regenerated per second on wearer ",true]
+,[59,"<b>%s1</b><i>%</i> self damage force ",false]
+,[60,"+<b>%s1</b><i>%</i> fire damage resistance on wearer ",true]
+,[61,"<b>%s1</b><i>%</i> fire damage vulnerability on wearer ",false]
+,[64,"+<b>%s1</b><i>%</i> explosive damage resistance on wearer ",true]
+,[65,"<b>%s1</b><i>%</i> explosive damage vulnerability on wearer ",false]
+,[67,"<b>%s1</b><i>%</i> bullet damage vulnerability on wearer ",false]
+,[68,"+<b>%s1</b> capture rate on wearer ",true]
+,[69,"<b>%s1</b><i>%</i> health from healers on wearer ",false]
+,[72,"<b>%s1</b><i>%</i> afterburn damage penalty ",false]
+,[76,"+<b>%s1</b><i>%</i> max primary ammo on wearer ",true]
+,[77,"<b>%s1</b><i>%</i> max primary ammo on wearer ",false]
+,[78,"+<b>%s1</b><i>%</i> max secondary ammo on wearer ",true]
+,[79,"<b>%s1</b><i>%</i> max secondary ammo on wearer ",false]
+,[83,"+<b>%s1</b><i>%</i> cloak duration ",true]
+,[86,"<b>%s1</b><i>%</i> slower spin up time ",false]
+,[87,"<b>%s1</b><i>%</i> faster spin up time ",true]
+,[88,"+<b>%s1</b> max pipebombs out ",true]
+,[89,"<b>%s1</b> max pipebombs out ",false]
+,[92,"Construction hit speed boost increased by <b>%s1</b><i>%</i> ",true]
+,[93,"Construction hit speed boost decreased by <b>%s1</b><i>%</i> ",false]
+,[95,"<b>%s1</b><i>%</i> slower repair rate ",false]
+,[97,"<b>%s1</b><i>%</i> faster reload time ",true]
+,[100,"<b>%s1</b><i>%</i> explosion radius ",false]
+,[103,"+<b>%s1</b><i>%</i> projectile speed ",true]
+,[105,"<b>%s1</b><i>%</i> max overheal ",false]
+,[106,"<b>%s1</b><i>%</i> more accurate ",true]
+,[107,"+<b>%s1</b><i>%</i> faster move speed on wearer ",true]
+,[108,"+<b>%s1</b><i>%</i> health from packs on wearer ",true]
+,[114,"Mini-crits targets launched airborne by explosions, grapple hooks or rocket packs ",true]
+,[115,"Damage increases as the user becomes injured ",true]
+,[119,"Detonates stickybombs near the crosshair and directly under your feet ",true]
+,[120,"<b>%s1</b> sec slower bomb arm time ",false]
+,[121,"Able to destroy enemy stickybombs ",true]
+,[124,"Replaces the Sentry with a Mini-Sentry ",false]
+,[125,"<b>%s1</b> max health on wearer ",false]
+,[126,"<b>%s1</b> sec faster bomb arm time ",true]
+,[127,"Launched bombs shatter on surfaces ",false]
+,[128,"When weapon is active: ",null]
+,[134,"★ Unusual Effect: <b>%s1</b> ",null]
+,[135,"<b>%s1</b><i>%</i> blast damage from rocket jumps ",true]
+,[136,"Gain 2 revenge crits for each sentry kill and 1 for each sentry assist when your sentry is destroyed.  ",true]
+,[137,"+<b>%s1</b><i>%</i> damage vs buildings ",true]
+,[138,"<b>%s1</b><i>%</i> damage vs players ",false]
+,[139,"Adds +50 max health for 30 seconds ",true]
+,[143,"Hire Date: <b>%s1</b> ",null]
+,[146,"Damage removes Sappers ",true]
+,[149,"On Hit: Bleed for <b>%s1</b> seconds ",true]
+,[150,"Imbued with an ancient power ",true]
+,[154,"Upon a successful backstab against a human target, you rapidly disguise as your victim ",true]
+,[156,"Silent Killer: No attack noise from backstabs ",true]
+,[158,"+<b>%s1</b><i>%</i> cloak on kill ",true]
+,[166,"+<b>%s1</b><i>%</i> cloak on hit ",true]
+,[170,"+<b>%s1</b><i>%</i> airblast cost ",false]
+,[175,"On Scoped Hit: Apply Jarate for 2 to <b>%s1</b> seconds based on charge level. Nature's Call: Scoped headshots always mini-crits and reduce the remaining cooldown of Jarate by 1 second. ",true]
+,[179,"Crits whenever it would normally mini-crit ",true]
+,[180,"+<b>%s1</b> health restored on kill ",true]
+,[181,"No self inflicted blast damage taken ",true]
+,[183,"<b>%s1</b><i>%</i> slower move speed while deployed ",false]
+,[187,"Crate Series #<b>%s1</b> ",true]
+,[197,"This is a special Halloween <b>%s1</b> item ",true]
+,[199,"This weapon holsters <b>%s1</b><i>%</i> faster ",true]
+,[200,"Alt-Fire: Applies a healing effect to all nearby teammates ",true]
+,[202,"<b>%s1</b> sec increase in charge duration ",true]
+,[203,"On Kill: A small health pack is dropped ",true]
+,[204,"On Miss: Hit yourself. Idiot. ",false]
+,[205,"<b>%s1</b><i>%</i> damage from ranged sources while active ",true]
+,[206,"+<b>%s1</b><i>%</i> damage from melee sources while active ",false]
+,[207,"+<b>%s1</b><i>%</i> damage to self ",false]
+,[208,"On Hit: target is engulfed in flames ",true]
+,[209,"100% minicrits vs burning players ",true]
+,[217,"On Backstab: Absorbs the health from your victim. ",true]
+,[218,"On Hit: One target at a time is Marked-For-Death, causing all damage taken to be mini-crits ",true]
+,[220,"On Kill: Gain <b>%s1</b><i>%</i> of base health on kill ",true]
+,[224,"<b>%s1</b><i>%</i> increase in damage when health &lt;50% of max ",true]
+,[225,"<b>%s1</b><i>%</i> decrease in damage when health &gt;50% of max ",false]
+,[226,"Honorbound: Once drawn sheathing deals 50 damage to yourself unless it kills. ",false]
+,[231,"ÜberCharge increases healing to 300% and grants immunity to movement-impairing effects ",null]
+,[235,"Move speed increases as the user becomes injured ",true]
+,[238,"Silent Killer: No barrel spin sound ",true]
+,[246,"+<b>%s1</b><i>%</i> increase in turning control while charging ",true]
+,[248,"+<b>%s1</b><i>%</i> increase in charge impact damage ",true]
+,[249,"+<b>%s1</b><i>%</i> increase in charge recharge rate ",true]
+,[250,"Grants Triple Jump while deployed. Melee attacks mini-crit while airborne.  ",true]
+,[251,"On Hit Teammate: Boosts both players' speed for several seconds ",true]
+,[252,"<b>%s1</b><i>%</i> reduction in push force taken from damage ",true]
+,[259,"Deals 3x falling damage to the player you land on ",true]
+,[267,"Deals crits while the wielder is rocket jumping ",true]
+,[268,"Base charge rate decreased by <b>%s1</b><i>%</i> ",false]
+,[269,"Allows you to see enemy health ",true]
+,[270,"Holds a maximum of <b>%s1</b> charges ",true]
+,[271,"Currently holds <b>%s1</b> charges ",true]
+,[272,"Each charge lasts <b>%s1</b> seconds ",true]
+,[278,"+<b>%s1</b><i>%</i> increase in recharge rate ",true]
+,[281,"Does not require ammo ",true]
+,[282,"Alt-Fire: A charged shot that mini-crits players, sets them on fire, and disables buildings for 4 sec ",true]
+,[283,"Projectile penetrates enemy targets ",true]
+,[284,"Deals only 20% damage to buildings ",false]
+,[285,"Projectile cannot be deflected ",true]
+,[296,"Gives one guaranteed critical hit for each building destroyed with your sapper attached or backstab kill ",true]
+,[297,"Cannot fire unless zoomed ",false]
+,[298,"Per Shot: -<b>%s1</b> ammo ",false]
+,[299,"On Hit: damage dealt is returned as ammo ",true]
+,[300,"Alt-Fire: Launches a projectile-consuming energy ball.  Costs 65 metal. ",true]
+,[301,"Uses metal for ammo ",false]
+,[304,"On Full Charge: +<b>%s1</b><i>%</i> damage per shot ",true]
+,[305,"Fires tracer rounds ",false]
+,[306,"No headshots when not fully charged ",false]
+,[307,"No reload necessary ",true]
+,[308,"On Full Charge: Projectiles penetrate players ",true]
+,[309,"Killing an enemy with a critical hit will dismember your victim. Painfully. ",true]
+,[311,"Unlimited use ",true]
+,[329,"<b>%s1</b><i>%</i> reduction in airblast vulnerability ",true]
+,[334,"Explode spectacularly on death ",true]
+,[337,"On Hit: Victim loses up to <b>%s1</b><i>%</i> Medigun charge ",true]
+,[338,"On Hit: Victim loses up to <b>%s1</b><i>%</i> cloak ",true]
+,[346,"Alt-Fire: Launches a festive ornament that shatters causing bleed ",true]
+,[347,"Backstab turns victim to ice ",false]
+,[352,"Press your reload key to choose to teleport to spawn or your exit teleporter ",true]
+,[356,"No airblast ",false]
+,[358,"Critical hit forces victim to laugh ",true]
+,[359,"Melts in fire, regenerates in <b>%s1</b> seconds and by picking up ammo ",false]
+,[360,"All players connected via Medigun beams are hit ",true]
+,[361,"On Hit by Fire: Fireproof for 1 second and Afterburn immunity for <b>%s1</b> seconds ",true]
+,[362,"Always critical hit from behind ",true]
+,[363,"Critical hits do no damage ",false]
+,[364,"Jingle all the way ",false]
+,[367,"Alt-Fire: Extinguish teammates to gain guaranteed critical hits ",true]
+,[368,"Build 'Mmmph' by dealing damage. Alt-Fire on full 'Mmmph': Taunt to gain crits for several seconds. Invulnerable while 'Mmmph' taunting.  ",true]
+,[369,"On Hit: Force enemies to laugh who are also wearing this item ",true]
+,[371,"Attrib_TauntSoundSuccess ",true]
+,[376,"No flinching when aiming and fully charged ",true]
+,[377,"Knockback reduced by <b>%s1</b><i>%</i> when aiming ",true]
+,[387,"Gain Focus on kills and assists ",true]
+,[391,"Reduces mystery solving time by up to <b>%s1</b><i>%</i> ",true]
+,[392,"<b>%s1</b><i>%</i> damage on body shot ",false]
+,[393,"Press 'Reload' to activate focus In Focus: +25% faster charge and no unscoping  ",true]
+,[398,"Attrib_RageGainOnAssists ",true]
+,[400,"Wearer cannot carry the intelligence briefcase or PASS Time JACK ",false]
+,[401,"Reduces chance of hunger by up to <b>%s1</b><i>%</i> ",true]
+,[410,"+<b>%s1</b><i>%</i> damage bonus while disguised ",true]
+,[411,"+<b>%s1</b> degrees random projectile deviation ",false]
+,[412,"<b>%s1</b><i>%</i> damage vulnerability on wearer ",false]
+,[413,"Hold Fire to load up to three rockets Release Fire to unleash the barrage  ",true]
+,[414,"You are Marked-For-Death while active, and for short period after switching weapons ",false]
+,[416,"Flare knocks back target on hit and explodes when it hits the ground. Increased knock back on burning players  ",true]
+,[417,"Overloading the chamber will cause a misfire ",false]
+,[418,"On Hit: Builds Boost .Run speed increased with Boost  ",true]
+,[419,"Boost reduced on air jumps ",false]
+,[420,"Witnessed the <b>%s1</b> inferno ",true]
+,[421,"No ammo from dispensers when active ",false]
+,[422,"Only visible in Pyroland ",false]
+,[426,"<b>%s1</b><i>%</i> sapper damage penalty ",false]
+,[430,"Creates a ring of flames while spun up ",true]
+,[431,"Consumes an additional <b>%s1</b> ammo per second while spun up ",false]
+,[433,"Reverses enemy building construction ",true]
+,[435,"Throw at your enemies to make them bleed!Long distance hits reduce recharge time  ",true]
+,[438,"100% critical hit vs wet players ",true]
+,[445,"On Equip: Visit Pyroland ",true]
+,[451,"Attrib_Sapper_Voice_Pak ",true]
+,[452,"Attrib_Sapper_Voice_Pak_Idle_Wait ",true]
+,[464,"Sentry build speed increased by <b>%s1</b><i>%</i> ",true]
+,[466,"Cannonballs have a fuse time of 1 second; fuses can be primed to explode earlier by holding down the fire key. ",null]
+,[467,"Cannonballs do not explode on impact ",false]
+,[469,"Alt-Fire: Use <b>%s1</b> metal to pick up your targeted building from long range ",true]
+,[472,"Self mark for death when hauling buildings ",false]
+,[473,"Press your reload key to cycle through resist types. While healing, provides you and your target with a constant 10% resistance to the selected damage type.  ",true]
+,[474,"Fires a special bolt that can repair friendly buildings ",true]
+,[477,"Cannonballs push players back on impact ",true]
+,[479,"<b>%s1</b><i>%</i> Overheal build rate. ",false]
+,[524,"+<b>%s1</b><i>%</i> greater jump height when active ",true]
+,[527,"Immune to the effects of afterburn. ",true]
+,[533,"Extra effects when taunting. ",true]
+,[536,"Increase in push force taken from damage and airblast ",false]
+,[537,"Leave a Calling Card on your victims. ",true]
+,[547,"This weapon deploys <b>%s1</b><i>%</i> faster ",true]
+,[619,"Mini-crits targets when fired at their back from close range ",true]
+,[621,"Increased attack speed and smaller blast radius while blast jumping ",true]
+,[636,"Charge and fire shots independent of zoom ",true]
+,[639,"Full turning control while charging ",true]
+,[644,"Clip size increased on kill ",true]
+,[661,"Rewarded for participating in the 2014 Summer Adventure. ",true]
+,[670,"Max charge time decreased by <b>%s1</b><i>%</i> ",true]
+,[671,"Grenades have very little bounce and roll ",true]
+,[676,"Taking damage while shield charging reduces remaining charging time ",false]
+,[693,"Increased Melee damage against Isolated Merc Set ",true]
+,[694,"Increased Nostromo Napalmer damage taken from Isolated Merc Set ",false]
+,[695,"Increased Nostromo Napalmer damage against Isolationist Pack Set ",true]
+,[696,"Increased Melee damage taken from Isolationist Pack Set ",false]
+,[701,"Duck XP Level&nbsp;: <b>%s1</b> ",true]
+,[702,"Duck Power&nbsp;: <b>%s1</b> / 5 ",true]
+,[703,"Early Supporter of End of the Line Community Update ",true]
+,[705,"Duckstreaks Active ",true]
+,[726,"<b>%s1</b><i>%</i> cloak meter when Feign Death is activated ",false]
+,[727,"Up to +<b>%s1</b><i>%</i> damage based on charge ",true]
+,[728,"No cloak meter from ammo boxes when invisible ",false]
+,[729,"<b>%s1</b><i>%</i> cloak meter from ammo boxes ",false]
+,[732,"<b>%s1</b><i>%</i> less metal from pickups and dispensers ",false]
+,[733,"Boost reduced when hit ",false]
+,[735,"100% critical hit vs burning players ",true]
+,[736,"Gain a speed boost on kill ",true]
+,[737,"On Hit: Gain a speed boost ",true]
+,[738,"<b>%s1</b><i>%</i> damage resistance when below 50% health and spun up ",true]
+,[739,"<b>%s1</b><i>%</i> ÜberCharge rate on Overhealed patients ",false]
+,[740,"<b>%s1</b><i>%</i> less healing from Medic sources ",false]
+,[741,"On Hit: Gain up to +<b>%s1</b> health per attack ",true]
+,[745,"Team Colored Decorated Weapon ",null]
+,[772,"This weapon holsters <b>%s1</b><i>%</i> slower ",false]
+,[773,"This weapon deploys <b>%s1</b><i>%</i> slower ",false]
+,[775,"<b>%s1</b><i>%</i> damage penalty vs buildings ",false]
+,[778,"Melee hits refill  <b>%s1</b><i>%</i> of your charge meter. ",true]
+,[779,"Secondary fire when charged grants mini-crits for <b>%s1</b> seconds. ",true]
+,[780,"Dealing damage fills charge meter. ",true]
+,[781,"This Weapon has a large melee range and deploys and holsters slower  ",null]
+,[782,"Ammo boxes collected also give Charge ",true]
+,[783,"Extinguishing teammates restores <b>%s1</b> health ",true]
+,[784,"Extinguishing teammates reduces cooldown by <b>%s1</b><i>%</i> ",true]
+,[787,"<b>%s1</b><i>%</i> fuse time on grenades ",true]
+,[788,"+<b>%s1</b><i>%</i> faster move speed on wearer (shield required) ",true]
+,[789,"<b>%s1</b><i>%</i> increased damage to your sentry's target ",true]
+,[790,"<b>%s1</b><i>%</i> metal cost when constructing or upgrading teleporters ",true]
+,[793,"On Hit: Builds Hype ",true]
+,[794,"+<b>%s1</b><i>%</i> fire damage resistance while deployed ",true]
+,[795,"<b>%s1</b><i>%</i> damage bonus vs burning players ",true]
+,[797,"Attacks pierce damage resistance effects and bonuses ",true]
+,[799,"Revenge crits are lost on death ",false]
+,[800,"<b>%s1</b><i>%</i> maximum overheal on wearer ",false]
+,[808,"Successive shots become less accurate ",false]
+,[809,"Fires a wide, fixed shot pattern ",true]
+,[810,"Attrib_NoCloakFromAmmo ",false]
+,[811,"Collect the organs of people you hit ",true]
+,[812,"<b>%s1</b><i>%</i> increased air control when blast jumping. ",true]
+,[816,"Normal disguises require (and consume) a full cloak meter ",false]
+,[848,"Spawning and resupply do not affect the Gas meter ",false]
+,[851,"+<b>%s1</b><i>%</i> faster move speed on wearer ",true]
+,[853,"<b>%s1</b><i>%</i> maximum overheal on wearer ",false]
+,[854,"<b>%s1</b><i>%</i> health from healers on wearer ",false]
+,[855,"Maximum health is drained while item is active ",false]
+,[868,"Critical damage is affected by range ",false]
+,[869,"Minicrits whenever it would normally crit ",false]
+,[870,"Push enemies back when you land (force and radius based on velocity) ",true]
+,[876,"<b>%s1</b><i>%</i> healing effect ",false]
+,[877,"Gain a speed boost when you hit an enemy player ",true]
+,[878,"Gas meter starts empty ",false]
+,[879,"Gas meter builds with damage done and/or time ",true]
+,[880,"<b>%s1</b>-to-1 health-to-metal ratio when repairing buildings ",false]
+,[881,"<b>%s1</b> health regenerated per second on wearer ",false]
+,[2013,"Killstreaker: <b>%s1</b> ",true]
+,[2014,"Sheen: <b>%s1</b> ",true]
+,[2016,"Pages of Tumidum: <b>%s1</b> ",true]
+,[2017,"Pages of Gratanter: <b>%s1</b> ",true]
+,[2018,"Pages of Audere: <b>%s1</b> ",true]
+,[2019,"Pages of Congeriae: <b>%s1</b> ",true]
+,[2020,"Pages of Veteris: <b>%s1</b> ",true]
+,[2025,"Killstreaks Active ",true]
+,[2034,"Melee kills refill <b>%s1</b><i>%</i> of your charge meter. ",true]
+,[2041,"★ Unusual Effect: <b>%s1</b> ",null]
+,[2049,"Third successful punch in a row always crits. ",true]
+,[2053,"Festivized ",null]
+,[2063,"Deals 300% damage to burning players +50% re-pressurization rate on hit",true]
+,[2064,"-50% repressurization rate on Alt-Fire ",false]
+,[2065,"Uses a shared pressure tank for Primary Fire and Alt-Fire. Primary Fire: Launches a fast-moving projectile that briefly ignites enemies Alt-Fire: Release a blast of air that pushes enemies and projectiles, and extinguishes teammates that are on fire.  ",null]
+,[2067,"Mini-crits burning targets and extinguishes them. Damage increases based on remaining duration of afterburn. Killing blows on burning players grant a speed boost.  ",true]
+
+
+    ]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        var Atribute_not_used_or_secret = [
+        [7,"<b>%s1</b><i>%</i> heal rate ",false]
+,[9,"<b>%s1</b><i>%</i> ÜberCharge rate ",false]
+,[11,"+<b>%s1</b><i>%</i> max overheal ",true]
+,[12,"<b>%s1</b><i>%</i> shorter overheal time ",false]
+,[13,"+<b>%s1</b><i>%</i> longer overheal time ",true]
+,[14,"Overheal bonus doesn't decay ",true]
+,[19,"On Hit: +<b>%s1</b><i>%</i> damage bonus ",true]
+,[21,"<b>%s1</b><i>%</i> damage vs non-burning players ",false]
+,[22,"No critical hits vs non-burning players ",false]
+,[23,"No compression blast ",false]
+,[27,"Attrib_AltFire_Disabled ",null]
+,[28,"No random critical hits ",false]
+,[30,"On Kill: +50 health on nearby teammates <p>On Kill: +10% Crit Chance on nearby teammates </p> ",null]
+,[39,"<b>%s1</b><i>%</i> damage vs non-stunned players ",false]
+,[40,"No move speed penalty from zoom ",true]
+,[43,"Attrib_Scattergun_NoReloadSingle ",null]
+,[46,"<b>%s1</b><i>%</i> zoom reduction ",false]
+,[47,"No zoom or damage charge ",false]
+,[49,"Disables double jump ",false]
+,[50,"Absorbs <b>%s1</b><i>%</i> damage while cloaked ",true]
+,[53,"Wearer cannot ignite ",true]
+,[58,"+<b>%s1</b><i>%</i> self damage force ",true]
+,[62,"+<b>%s1</b><i>%</i> critical hit damage resistance on wearer ",true]
+,[63,"<b>%s1</b><i>%</i> critical hit damage vulnerability on wearer ",false]
+,[66,"+<b>%s1</b><i>%</i> bullet damage resistance on wearer ",true]
+,[70,"+<b>%s1</b><i>%</i> health from healers on wearer ",true]
+,[71,"+<b>%s1</b><i>%</i> afterburn damage bonus ",true]
+,[73,"+<b>%s1</b><i>%</i> afterburn duration ",true]
+,[74,"<b>%s1</b><i>%</i> afterburn duration ",false]
+,[75,"+<b>%s1</b><i>%</i> faster move speed while deployed ",true]
+,[80,"+<b>%s1</b><i>%</i> max metal on wearer ",true]
+,[81,"<b>%s1</b><i>%</i> max metal on wearer ",false]
+,[82,"-<b>%s1</b><i>%</i> cloak duration ",false]
+,[84,"+<b>%s1</b><i>%</i> cloak regeneration rate ",true]
+,[85,"<b>%s1</b><i>%</i> cloak regeneration rate ",false]
+,[90,"<b>%s1</b><i>%</i> faster power charge ",true]
+,[91,"<b>%s1</b><i>%</i> slower power charge ",false]
+,[94,"<b>%s1</b><i>%</i> faster repair rate ",true]
+,[96,"<b>%s1</b><i>%</i> slower reload time ",false]
+,[98,"On Hit: <b>%s1</b> health ",false]
+,[99,"+<b>%s1</b><i>%</i> explosion radius ",true]
+,[101,"+<b>%s1</b><i>%</i> projectile range ",true]
+,[102,"<b>%s1</b><i>%</i> projectile range ",false]
+,[104,"<b>%s1</b><i>%</i> projectile speed ",false]
+,[109,"<b>%s1</b><i>%</i> health from packs on wearer ",false]
+,[110,"On Hit: Gain up to +<b>%s1</b> health ",true]
+,[111,"On Hit: <b>%s1</b> health ",false]
+,[112,"+<b>%s1</b><i>%</i> ammo regenerated every 5 seconds on wearer ",true]
+,[113,"+<b>%s1</b> metal regenerated every 5 seconds on wearer ",true]
+,[116,"Attrib_SoldierBuffType ",true]
+,[117,"Attrib_Dmg_Falloff_Increased ",false]
+,[118,"<b>%s1</b><i>%</i> splash damage fall off ",true]
+,[122,"Attrib_DemoBuffType ",true]
+,[123,"<b>%s1</b><i>%</i> speed boost while active weapon ",true]
+,[129,"<b>%s1</b> health drained per second on wearer ",false]
+,[130,"+<b>%s1</b><i>%</i> natural regen rate ",true]
+,[131,"-<b>%s1</b><i>%</i> natural regen rate ",false]
+,[132,"Given to valuable Community Contributors ",null]
+,[133,"Medal no. <b>%s1</b> ",null]
+,[140,"+<b>%s1</b> max health on wearer ",true]
+,[141,"I made this! ",null]
+,[142,"Item tint color code: <b>%s1</b> ",null]
+,[144,"Sets weapon mode #<b>%s1</b> ",null]
+,[145,"<b>%s1</b><i>%</i> damage penalty ",null]
+,[147,"Wrench no. <b>%s1</b> ",null]
+,[148,"<b>%s1</b> metal reduction in building cost ",true]
+,[151,"Attrib_Socket ",true]
+,[152,"Custom Texture ",true]
+,[153,"Not Tradable or Marketable ",null]
+,[155,"Wearer cannot disguise ",false]
+,[157,"<b>%s1</b> sec slower disguise speed ",false]
+,[159,"<b>%s1</b> sec longer cloak blink time ",false]
+,[160,"Reduced decloak sound volume ",true]
+,[161,"<b>%s1</b><i>%</i> less flame spread area ",false]
+,[162,"+<b>%s1</b><i>%</i> more flame spread area ",true]
+,[163,"<b>%s1</b><i>%</i> less flame distance ",false]
+,[164,"+<b>%s1</b><i>%</i> more flame distance ",true]
+,[165,"Airblast can now be charged, which will push enemies further ",null]
+,[167,"Attrib_DisguiseDamageReduction ",true]
+,[168,"Immune to fire damage while disguised ",true]
+,[169,"+<b>%s1</b><i>%</i> sentry damage resistance on wearer ",true]
+,[171,"<b>%s1</b><i>%</i> airblast cost ",true]
+,[172,"Purchased: Not Tradable, Marketable, or Usable in Crafting ",null]
+,[173,"+<b>%s1</b><i>%</i> flamethrower ammo consumed per second ",false]
+,[174,"<b>%s1</b><i>%</i> flamethrower ammo consumed per second ",true]
+,[176,"The wearer cannot be killed by headshots ",true]
+,[177,"<b>%s1</b><i>%</i> longer weapon switch ",false]
+,[178,"<b>%s1</b><i>%</i> faster weapon switch ",true]
+,[182,"On Hit: Slow target movement by 40% for <b>%s1</b>s ",true]
+,[184,"Attrib_DuelLoserAccountID ",null]
+,[185,"Date Received: <b>%s1</b> ",null]
+,[186,"Gift from: <b>%s1</b> ",true]
+,[188,"On death up to <b>%s1</b><i>%</i> of your stored <p>ÜberCharge is retained </p> ",true]
+,[189,"Attrib_ElevateQuality ",true]
+,[190,"+<b>%s1</b> health regenerated per second on wearer ",true]
+,[191,"<b>%s1</b> health drained per second on wearer ",false]
+,[194,"Contains: <b>%s1</b> ",null]
+,[195,"Always Tradable ",false]
+,[196,"Noise Maker ",null]
+,[198,"This is a special Halloween <b>%s1</b> item ",true]
+,[201,"+<b>%s1</b><i>%</i> faster taunt speed on wearer ",true]
+,[211,"Tradable After: <b>%s1</b> ",false]
+,[216,"Attrib_Knockback ",true]
+,[219,"<b>%s1</b><i>%</i> damage penalty ",true]
+,[221,"Attrib_DecloakRate ",true]
+,[222,"On Scoped Bodyshot: Rifle charge rate increased by <b>%s1</b><i>%</i> ",true]
+,[223,"On Scoped Miss: Rifle charge rate decreased by <b>%s1</b><i>%</i> ",false]
+,[227,"Custom Texture ",true]
+,[228,"Crafted by <b>%s1</b> ",true]
+,[230,"When the medic healing you is killed you <p>gain 2 revenge crits </p> ",true]
+,[232,"When the medic healing you is killed <p>you gain mini-crit boost for <b>%s1</b> seconds </p> ",true]
+,[233,"While a medic is healing you, <p>this weapon's damage is increased by <b>%s1</b><i>%</i> </p> ",true]
+,[234,"While not being healed by a medic, <p>your weapon switch time is <b>%s1</b><i>%</i> longer </p> ",false]
+,[236,"Blocks healing while in use ",false]
+,[237,"On Scoped Headshot: Rifle charge rate increased by <b>%s1</b><i>%</i> ",true]
+,[239,"+<b>%s1</b><i>%</i> ÜberCharge rate for the medic healing you <p>This effect does not work in the respawn room </p> ",true]
+,[240,"<b>%s1</b><i>%</i> faster reload time while being healed ",true]
+,[241,"<b>%s1</b><i>%</i> slower reload time ",false]
+,[242,"When the medic healing you is killed <p>the killer becomes Marked-For-Death </p> ",true]
+,[243,"<b>%s1</b><i>%</i> rage lost on hit ",false]
+,[244,"<b>%s1</b><i>%</i> rage gained on hit ",true]
+,[245,"Gains a damage bonus as rage increases, up to <b>%s1</b><i>%</i> ",true]
+,[247,"Can deal charge impact damage at any range ",true]
+,[253,"<b>%s1</b> sec increase in time to cloak ",false]
+,[255,"+<b>%s1</b><i>%</i> airblast push force ",true]
+,[258,"Ammo collected from ammo boxes becomes health ",true]
+,[260,"Attrib_DeflectionSizeMultiplier ",true]
+,[261,"Item tint color code: <b>%s1</b> ",null]
+,[262,"Winner: <b>%s1</b> <b>%s2</b> ",true]
+,[264,"<b>%s1</b><i>%</i> increased melee attack range ",true]
+,[265,"Attrib_MiniCritAirborneEnemiesDeploy ",true]
+,[266,"Projectiles penetrate enemy players ",true]
+,[273,"Consumable: Become Crit Boosted for 5 seconds <p>(and double your sentry's firing speed) </p> ",true]
+,[274,"Consumable: Become Übercharged for 5 seconds <p>(and shield your sentry from damage) </p> ",true]
+,[275,"Wearer never takes falling damage ",true]
+,[276,"Teleporters can be used in both directions ",true]
+,[277,"Attrib_MultipleSentries ",true]
+,[279,"+<b>%s1</b><i>%</i> max misc ammo on wearer ",true]
+,[286,"+<b>%s1</b><i>%</i> max building health ",true]
+,[287,"+<b>%s1</b><i>%</i> Sentry Gun damage bonus ",true]
+,[288,"Cannot be crit boosted ",false]
+,[289,"Attrib_CenterFireProjectile ",true]
+,[302,"This item will expire on <b>%s1</b>. ",null]
+,[310,"Consumable: Instantly teleport to spawn ",true]
+,[313,"<b>%s1</b><i>%</i> movement speed on targets ",true]
+,[314,"Über duration increased <b>%s1</b> seconds ",true]
+,[315,"Consumable: Instantly refill all weapon clips and ammo ",true]
+,[317,"Attrib_AlternateRocketEffect ",null]
+,[318,"+<b>%s1</b><i>%</i> faster reload time ",true]
+,[319,"+<b>%s1</b><i>%</i> buff duration ",true]
+,[320,"Increased robot Sapper radius and duration ",true]
+,[321,"+<b>%s1</b><i>%</i> faster build speed ",true]
+,[322,"<b>%s1</b><i>%</i> damage penalty ",null]
+,[323,"Bullets destroy rockets and grenades in-flight.  Increased accuracy and frequency per-level. ",true]
+,[324,"Accuracy scales damage ",true]
+,[325,"+<b>%s1</b><i>%</i> bonus currency from packs ",true]
+,[326,"+<b>%s1</b><i>%</i> greater jump height when active ",true]
+,[327,"Consumable: Instantly upgrade all buildings to max level ",true]
+,[335,"+<b>%s1</b><i>%</i> clip size ",true]
+,[336,"Unable to see enemy health ",false]
+,[339,"On Hit Spy: Reveal cloaked Spy ",true]
+,[340,"On Hit Spy: Reveal disguised Spy ",true]
+,[341,"When backstabbed: Jarate attacker ",true]
+,[343,"+<b>%s1</b><i>%</i> sentry firing speed ",true]
+,[344,"+<b>%s1</b><i>%</i> sentry range ",true]
+,[345,"+<b>%s1</b><i>%</i> dispenser range ",true]
+,[351,"Build +<b>%s1</b> additional disposable-sentry ",true]
+,[353,"Cannot carry buildings ",false]
+,[354,"Stuns enemies who are also wielding this weapon ",true]
+,[355,"Per Shot Missed: -<b>%s1</b> ammo ",false]
+,[357,"+<b>%s1</b><i>%</i> buff duration ",true]
+,[365,"Attrib_SetIcicleKnifeMode ",false]
+,[366,"On Hit: If enemy's belt is at or above eye level, <p>stun them for <b>%s1</b> seconds </p> ",true]
+,[372,"A perpetual bond of commitment between <b>%s1</b> ",true]
+,[373,"and <b>%s1</b>, forever and ever and ever. XoXoX ",true]
+,[374,"Usable After: <b>%s1</b> ",false]
+,[375,"Generate Rage by dealing damage.  When fully charged, press the Special-Attack key to activate knockback ",true]
+,[378,"<b>%s1</b><i>%</i> slower move speed when aiming ",false]
+,[389,"Shots go through multiple enemies ",true]
+,[390,"Headshots deal an extra +<b>%s1</b><i>%</i> damage ",true]
+,[394,"+<b>%s1</b><i>%</i> faster firing speed ",true]
+,[395,"Increased headshot explosion radius and damage to nearby enemies ",true]
+,[396,"+<b>%s1</b><i>%</i> faster melee attack speed ",true]
+,[397,"Bullets penetrate +<b>%s1</b> enemies ",true]
+,[399,"Increase backstab damage against Giant Robots by <b>%s1</b><i>%</i> ",true]
+,[402,"Cannot be backstabbed ",true]
+,[403,"Squad surplus claimed by: <b>%s1</b> ",true]
+,[404,"Using your Power Up Canteen will apply the same bonus effect to your heal target ",true]
+,[405,"Attrib_AirBlastVerticalVulnerabilityMultipier ",true]
+,[407,"100% critical hit vs disguised players ",true]
+,[408,"100% critical hit vs non-burning players ",true]
+,[409,"On Kill: Burst into joyous laughter ",true]
+,[424,"<b>%s1</b><i>%</i> clip size ",false]
+,[425,"+<b>%s1</b><i>%</i> sapper damage bonus ",true]
+,[427,"+<b>%s1</b> health regenerated per second for each active sapper ",true]
+,[428,"<b>%s1</b><i>%</i> sapper health bonus ",true]
+,[429,"<b>%s1</b><i>%</i> sapper health penalty ",false]
+,[434,"<b>%s1</b><i>%</i> sapper damage penalty ",false]
+,[437,"100% critical hit vs stunned players ",true]
+,[440,"+<b>%s1</b> clip size ",true]
+,[441,"Attrib_AutoFiresFullClipAllAtOnce ",true]
+,[444,"Disables double jump ",false]
+,[448,"Attrib_PlayerSkinOverride ",true]
+,[453,"Killed Merasmus at level <b>%s1</b> ",true]
+,[465,"Increases teleporter build speed by <b>%s1</b><i>%</i>. ",true]
+,[470,"<b>%s1</b><i>%</i> damage on contact with surfaces ",false]
+,[471,"Generate building rescue energy on damage ",true]
+,[475,"+<b>%s1</b><i>%</i> projectile speed ",true]
+,[476,"+<b>%s1</b><i>%</i> damage bonus ",true]
+,[481,"Share Canteens with your heal target. <p>+1 duration, -10 price per point (minimum cost: 5) </p> ",true]
+,[482,"+25% more overheal, +50% longer duration per point ",true]
+,[484,"Syringes deliver a highly concentrated dose of Mad Milk. Duration increases per hit to a max of 4 seconds. ",true]
+,[488,"+15% rocket speed per point.  On direct hits: rocket does maximum damage, stuns target, and blast radius increased +15% per point. ",true]
+,[489,"+<b>%s1</b><i>%</i> faster move speed on wearer ",true]
+,[490,"+<b>%s1</b> health regenerated per second on wearer ",true]
+,[491,"+<b>%s1</b><i>%</i> critical hit damage resistance on wearer ",true]
+,[492,"+<b>%s1</b><i>%</i> fire damage resistance on wearer ",true]
+,[493,"+25% heal rate for patient, +25% faster revive rate, and +25% self heal rate, per point ",true]
+,[499,"Build energy by healing teammates.  When fully charged, press the Special-Attack key to deploy a frontal projectile shield. ",true]
+,[516,"<b>%s1</b><i>%</i> bullet damage vulnerability on wearer ",false]
+,[517,"+<b>%s1</b> max health on wearer ",true]
+,[525,"<b>%s1</b><i>%</i> increase in push force taken from damage ",false]
+,[526,"+<b>%s1</b><i>%</i> bonus healing from all sources ",true]
+,[532,"Hype Decays Over Time. ",false]
+,[534,"<b>%s1</b><i>%</i> reduction in airblast vulnerability ",false]
+,[535,"<b>%s1</b><i>%</i> increase in push force taken from damage ",false]
+,[540,"Attrib_AddHeadOnHit ",true]
+,[554,"Revive Teammates ",true]
+,[606,"Attrib_TauntSoundSuccess ",true]
+,[607,"Attrib_PhaseCloak ",true]
+,[608,"Attrib_TauntSoundSuccess ",true]
+,[609,"Attrib_PhaseCloak ",true]
+,[610,"<b>%s1</b><i>%</i> increased air control. ",true]
+,[612,"Attrib_RocketLaunchImpulse ",true]
+,[613,"On Kill: Gain Mini-crits for <b>%s1</b> seconds. ",true]
+,[614,"No metal from dispensers when active. ",false]
+,[630,"Attrib_BackHeadshot ",true]
+,[632,"Fires 3 barrages while explosive jumping ",true]
+,[634,"Attrib_AirJumpOnAttack ",true]
+,[637,"Zoom does not affect charge ",true]
+,[638,"100% critical hits burning players from behind. <p>Mini-crits burning players from the front. </p> ",true]
+,[643,"<b>%s1</b><i>%</i> blast damage from rocket jumps ",true]
+,[647,"Fires tracer rounds ",false]
+,[651,"Fire rate increases as health decreases ",true]
+,[669,"Stickybombs fizzle <b>%s1</b> seconds after landing ",false]
+,[674,"Attrib_Class_Select_Override_VCD ",true]
+,[684,"<b>%s1</b><i>%</i> damage on grenades that explode on timer ",false]
+,[708,"Hold fire to load up to 4 shells ",true]
+,[709,"Weapon spread increases as health decreases ",false]
+,[710,"Attrib_AutoFiresFullClipNegative ",false]
+,[711,"Attrib_AutoFiresWhenFull ",false]
+,[730,"Attrib_ElevateQuality ",]
+,[734,"<b>%s1</b><i>%</i> less healing from all sources ",false]
+,[748,"Items Traded in&nbsp;: <b>%s1</b> ",null]
+,[774,"<b>%s1</b> sec decrease in charge duration ",false]
+,[776,"<b>%s1</b><i>%</i> decrease in charge impact damage ",false]
+,[777,"Not Tradable, Marketable, Usable in Crafting, or Gift Wrappable ",null]
+,[791,"Attrib_DamageBlastPush ",true]
+,[807,"Collect the organs of your victims ",true]
+,[813,"Immune to push force from damage and airblast when spun up ",true]
+,[822,"Attrib_AirblastDestroyProjectile ",null]
+,[852,"<b>%s1</b><i>%</i> damage vulnerability on wearer ",false]
+,[871,"Stun enemies when you land ",true]
+,[872,"Able to re-launch while already in-flight ",true]
+,[874,"<b>%s1</b><i>%</i> faster recharge rate ","no img"]
+,[875,"Ignited enemies explode ","no img"]
+,[1000,"+<b>%s1</b><i>%</i> damage bonus ",true]
+,[1001,"+<b>%s1</b><i>%</i> bullet damage resistance on wearer ",true]
+,[1002,"+<b>%s1</b><i>%</i> faster move speed on wearer ",true]
+,[1003,"+<b>%s1</b> health regenerated per second on wearer ",true]
+,[1004,"<b>%s1</b> ",true]
+,[1005,"<b>%s1</b> ",true]
+,[1006,"Voices From Below ",true]
+,[1007,"Pumpkin Bombs ",true]
+,[1008,"Halloween Fire ",true]
+,[1009,"Exorcism ",true]
+,[2043,"<b>%s1</b><i>%</i> slower upgrade rate ",false]
+,[2048,"Disables double jump ",false]
+
+        ]
+
+
+
+
+
+        var Used = AllAtribute
+
+        var UsedSecert = true
+        var TryMax = 25
+        var d = 0
+        var d2 = ''
+        var gg = 0
+        var checkbox = true
+        var WeaponName = {
+            13: { name: 'Scattergun', ClassIndex: 0, },
+            45: { name: 'Force-A-Nature', ClassIndex: 0, },
+            200: { name: 'Scattergun (Renamed/Strange)', ClassIndex: 0, },
+            220: { name: 'The Shortstop', ClassIndex: 0, },
+            448: { name: 'The Soda Popper', ClassIndex: 0, },
+            669: { name: 'Festive Scattergun', ClassIndex: 0, },
+            772: { name: "Baby Face's Blaster", ClassIndex: 0, },
+            799: { name: 'Silver Botkiller Scattergun Mk.I', ClassIndex: 0, },
+            808: { name: 'Gold Botkiller Scattergun Mk.I', ClassIndex: 0, },
+            888: { name: 'Rust Botkiller Scattergun Mk.I', ClassIndex: 0, },
+            897: { name: 'Blood Botkiller Scattergun Mk.I', ClassIndex: 0, },
+            906: { name: 'Carbonado Botkiller Scattergun Mk.I', ClassIndex: 0, },
+            915: { name: 'Diamond Botkiller Scattergun Mk.I', ClassIndex: 0, },
+            964: { name: 'Silver Botkiller Scattergun Mk.II', ClassIndex: 0, },
+            973: { name: 'Gold Botkiller Scattergun Mk.II', ClassIndex: 0, },
+            1078: { name: 'Festive Force-A-Nature', ClassIndex: 0, },
+            1103: { name: 'The Back Scatter', ClassIndex: 0, },
+            15002: { name: 'Night Terror(Scattergun)', ClassIndex: 0, },
+            15015: { name: 'Tartan Torpedo(Scattergun)', ClassIndex: 0, },
+            15021: { name: 'Country Crusher(Scattergun)', ClassIndex: 0, },
+            15029: { name: 'Backcountry Blaster(Scattergun)', ClassIndex: 0, },
+            15036: { name: 'Spruce Deuce(Scattergun)', ClassIndex: 0, },
+            15053: { name: 'Current Event(Scattergun)', ClassIndex: 0, },
+            15065: { name: 'Macabre Web(Scattergun)', ClassIndex: 0, },
+            15069: { name: 'Nutcracker(Scattergun)', ClassIndex: 0, },
+            15106: { name: 'Blue Mew(Scattergun)', ClassIndex: 0, },
+            15107: { name: 'Flower Power(Scattergun)', ClassIndex: 0, },
+            15108: { name: 'Shot to Hell(Scattergun)', ClassIndex: 0, },
+            15131: { name: 'Coffin Nail(Scattergun)', ClassIndex: 0, },
+            15151: { name: 'Killer Bee(Scattergun)', ClassIndex: 0, },
+            15157: { name: 'Corsair(Scattergun)', ClassIndex: 0, },
+            23: { name: "Scout's Pistol", ClassIndex: 0, },
+            46: { name: 'Bonk! Atomic Punch', ClassIndex: 0, },
+            160: { name: 'Vintage Lugermorph', ClassIndex: 0, },
+            163: { name: 'Crit-a-Cola', ClassIndex: 0, },
+            209: { name: 'Pistol (Renamed/Strange)', ClassIndex: 0, },
+            222: { name: 'Mad Milk', ClassIndex: 0, },
+            294: { name: 'Lugermorph', ClassIndex: 0, },
+            449: { name: 'The Winger', ClassIndex: 0, },
+            773: { name: "Pretty Boy's Pocket Pistol", ClassIndex: 0, },
+            812: { name: 'The Flying Guillotine', ClassIndex: 0, },
+            833: { name: 'The Flying Guillotine (Genuine)', ClassIndex: 0, },
+            1121: { name: 'Mutated Milk', ClassIndex: 0, },
+            1145: { name: 'Festive Bonk!', ClassIndex: 0, },
+            15013: { name: 'Red Rock Roscoe(Pistol)', ClassIndex: 0, },
+            15018: { name: 'Homemade Heater(Pistol)', ClassIndex: 0, },
+            15035: { name: 'Hickory Holepuncher(Pistol)', ClassIndex: 0, },
+            15041: { name: 'Local Hero(Pistol)', ClassIndex: 0, },
+            15046: { name: 'Black Dahlia(Pistol)', ClassIndex: 0, },
+            15056: { name: 'Sandstone Special(Pistol)', ClassIndex: 0, },
+            15060: { name: 'Macabre Web(Pistol)', ClassIndex: 0, },
+            15061: { name: 'Nutcracker(Pistol)', ClassIndex: 0, },
+            15100: { name: 'Blue Mew(Pistol)', ClassIndex: 0, },
+            15101: { name: 'Brain Candy(Pistol)', ClassIndex: 0, },
+            15102: { name: 'Shot to Hell(Pistol)', ClassIndex: 0, },
+            15126: { name: 'Dressed To Kill(Pistol)', ClassIndex: 0, },
+            15148: { name: 'Blitzkrieg(Pistol)', ClassIndex: 0, },
+            30666: { name: 'The C.A.P.P.E.R.', ClassIndex: 0, },
+            0: { name: 'Bat', ClassIndex: 0, },
+            44: { name: 'The Sandman', ClassIndex: 0, },
+            190: { name: 'Bat (Renamed/Strange)', ClassIndex: 0, },
+            221: { name: 'The Holy Mackerel', ClassIndex: 0, },
+            264: { name: 'Frying Pan', ClassIndex: 0, },
+            317: { name: 'The Candy Cane', ClassIndex: 0, },
+            325: { name: 'The Boston Basher', ClassIndex: 0, },
+            349: { name: 'Sun-on-a-Stick', ClassIndex: 0, },
+            355: { name: "The Fan O'War", ClassIndex: 0, },
+            423: { name: 'Saxxy', ClassIndex: 0, },
+            450: { name: 'The Atomizer', ClassIndex: 0, },
+            452: { name: 'Three-Rune Blade', ClassIndex: 0, },
+            474: { name: 'The Conscientious Objector', ClassIndex: 0, },
+            572: { name: 'Unarmed Combat', ClassIndex: 0, },
+            648: { name: 'The Wrap Assassin', ClassIndex: 0, },
+            660: { name: 'Festive Bat', ClassIndex: 0, },
+            880: { name: 'The Freedom Staff', ClassIndex: 0, },
+            939: { name: 'The Bat Outta Hell', ClassIndex: 0, },
+            954: { name: 'The Memory Maker', ClassIndex: 0, },
+            999: { name: 'Festive Holy Mackerel', ClassIndex: 0, },
+            1013: { name: 'The Ham Shank', ClassIndex: 0, },
+            1071: { name: 'Gold Frying Pan', ClassIndex: 0, },
+            1123: { name: 'The Necro Smasher', ClassIndex: 0, },
+            1127: { name: 'The Crossing Guard', ClassIndex: 0, },
+            30667: { name: 'Batsaber', ClassIndex: 0, },
+            30758: { name: 'Prinny Machete', ClassIndex: 0, },
+            18: { name: 'Rocket Launcher', ClassIndex: 1, },
+            127: { name: 'The Direct Hit', ClassIndex: 1, },
+            205: { name: 'Rocket Launcher (Renamed/Strange)', ClassIndex: 1, },
+            228: { name: 'The Black Box', ClassIndex: 1, },
+            237: { name: 'Rocket Jumper', ClassIndex: 1, },
+            414: { name: 'The Liberty Launcher', ClassIndex: 1, },
+            441: { name: 'The Cow Mangler 5000', ClassIndex: 1, },
+            513: { name: 'The Original', ClassIndex: 1, },
+            658: { name: 'Festive Rocket Launcher', ClassIndex: 1, },
+            730: { name: "The Beggar's Bazooka", ClassIndex: 1, },
+            800: { name: 'Silver Botkiller Rocket Launcher Mk.I', ClassIndex: 1, },
+            809: { name: 'Gold Botkiller Rocket Launcher Mk.I', ClassIndex: 1, },
+            889: { name: 'Rust Botkiller Rocket Launcher Mk.I', ClassIndex: 1, },
+            898: { name: 'Blood Botkiller Rocket Launcher Mk.I', ClassIndex: 1, },
+            907: { name: 'Carbonado Botkiller Rocket Launcher Mk.I', ClassIndex: 1, },
+            916: { name: 'Diamond Botkiller Rocket Launcher Mk.I', ClassIndex: 1, },
+            965: { name: 'Silver Botkiller Rocket Launcher Mk.II', ClassIndex: 1, },
+            974: { name: 'Gold Botkiller Rocket Launcher Mk.II', ClassIndex: 1, },
+            1085: { name: 'Festive Black Box', ClassIndex: 1, },
+            1104: { name: 'The Air Strike', ClassIndex: 1, },
+            15006: { name: 'Woodland Warrior(Rocket Launcher)', ClassIndex: 1, },
+            15014: { name: 'Sand Cannon(Rocket Launcher)', ClassIndex: 1, },
+            15028: { name: 'American Pastoral(Rocket Launcher)', ClassIndex: 1, },
+            15043: { name: 'Smalltown Bringdown(Rocket Launcher)', ClassIndex: 1, },
+            15052: { name: 'Shell Shocker(Rocket Launcher)', ClassIndex: 1, },
+            15057: { name: 'Aqua Marine(Rocket Launcher)', ClassIndex: 1, },
+            15081: { name: 'Autumn(Rocket Launcher)', ClassIndex: 1, },
+            15104: { name: 'Blue Mew(Rocket Launcher)', ClassIndex: 1, },
+            15105: { name: 'Brain Candy(Rocket Launcher)', ClassIndex: 1, },
+            15129: { name: 'Coffin Nail(Rocket Launcher)', ClassIndex: 1, },
+            15130: { name: "High Roller's(Rocket Launcher)", ClassIndex: 1, },
+            15150: { name: 'Warhawk(Rocket Launcher)', ClassIndex: 1, },
+            10: { name: "Soldier's Shotgun", ClassIndex: 1, },
+            129: { name: 'The Buff Banner', ClassIndex: 1, },
+            133: { name: 'Gunboats', ClassIndex: 1, },
+            199: { name: 'Shotgun (Renamed/Strange)', ClassIndex: 1, },
+            226: { name: "The Battalion's Backup", ClassIndex: 1, },
+            354: { name: 'The Concheror', ClassIndex: 1, },
+            415: { name: 'The Reserve Shooter', ClassIndex: 1, },
+            442: { name: 'The Righteous Bison', ClassIndex: 1, },
+            444: { name: 'The Mantreads', ClassIndex: 1, },
+            1001: { name: 'Festive Buff Banner', ClassIndex: 1, },
+            1101: { name: 'The B.A.S.E. Jumper', ClassIndex: 1, },
+            1141: { name: 'Festive Shotgun', ClassIndex: 1, },
+            1153: { name: 'Panic Attack', ClassIndex: 1, },
+            15003: { name: 'Backwoods Boomstick(Shotgun)', ClassIndex: 1, },
+            15016: { name: 'Rustic Ruiner(Shotgun)', ClassIndex: 1, },
+            15044: { name: 'Civic Duty(Shotgun)', ClassIndex: 1, },
+            15047: { name: 'Lightning Rod(Shotgun)', ClassIndex: 1, },
+            15085: { name: 'Autumn(Shotgun)', ClassIndex: 1, },
+            15109: { name: 'Flower Power(Shotgun)', ClassIndex: 1, },
+            15132: { name: 'Coffin Nail(Shotgun)', ClassIndex: 1, },
+            15133: { name: 'Dressed to Kill(Shotgun)', ClassIndex: 1, },
+            15152: { name: 'Red Bear(Shotgun)', ClassIndex: 1, },
+            6: { name: 'Shovel', ClassIndex: 1, },
+            128: { name: 'The Equalizer', ClassIndex: 1, },
+            154: { name: 'The Pain Train', ClassIndex: 1, },
+            196: { name: 'Shovel (Renamed/Strange)', ClassIndex: 1, },
+            264: { name: 'Frying Pan', ClassIndex: 1, },
+            357: { name: 'The Half-Zatoichi', ClassIndex: 1, },
+            416: { name: 'The Market Gardener', ClassIndex: 1, },
+            423: { name: 'Saxxy', ClassIndex: 1, },
+            447: { name: 'The Disciplinary Action', ClassIndex: 1, },
+            474: { name: 'The Conscientious Objector', ClassIndex: 1, },
+            775: { name: 'The Escape Plan', ClassIndex: 1, },
+            880: { name: 'The Freedom Staff', ClassIndex: 1, },
+            939: { name: 'The Bat Outta Hell', ClassIndex: 1, },
+            954: { name: 'The Memory Maker', ClassIndex: 1, },
+            1013: { name: 'The Ham Shank', ClassIndex: 1, },
+            1071: { name: 'Gold Frying Pan', ClassIndex: 1, },
+            1123: { name: 'The Necro Smasher', ClassIndex: 1, },
+            1127: { name: 'The Crossing Guard', ClassIndex: 1, },
+            30758: { name: 'Prinny Machete', ClassIndex: 1, },
+            21: { name: 'Flame Thrower', ClassIndex: 2, },
+            40: { name: 'The Backburner', ClassIndex: 2, },
+            208: { name: 'Flame Thrower (Renamed/Strange)', ClassIndex: 2, },
+            215: { name: 'The Degreaser', ClassIndex: 2, },
+            594: { name: 'The Phlogistinator', ClassIndex: 2, },
+            659: { name: 'Festive Flame Thrower', ClassIndex: 2, },
+            741: { name: 'The Rainblower', ClassIndex: 2, },
+            798: { name: 'Silver Botkiller Flame Thrower Mk.I', ClassIndex: 2, },
+            807: { name: 'Gold Botkiller Flame Thrower Mk.I', ClassIndex: 2, },
+            887: { name: 'Rust Botkiller Flame Thrower Mk.I', ClassIndex: 2, },
+            896: { name: 'Blood Botkiller Flame Thrower Mk.I', ClassIndex: 2, },
+            905: { name: 'Carbonado Botkiller Flame Thrower Mk.I', ClassIndex: 2, },
+            914: { name: 'Diamond Botkiller Flame Thrower Mk.I', ClassIndex: 2, },
+            963: { name: 'Silver Botkiller Flame Thrower Mk.II', ClassIndex: 2, },
+            972: { name: 'Gold Botkiller Flame Thrower Mk.II', ClassIndex: 2, },
+            1146: { name: 'Festive Backburner', ClassIndex: 2, },
+            1178: { name: "Dragon's Fury", ClassIndex: 2, },
+            15005: { name: 'Forest Fire(Flame Thrower)', ClassIndex: 2, },
+            15017: { name: 'Barn Burner(Flame Thrower)', ClassIndex: 2, },
+            15030: { name: 'Bovine Blazemaker(Flame Thrower)', ClassIndex: 2, },
+            15034: { name: 'Earth, Sky and Fire(Flame Thrower)', ClassIndex: 2, },
+            15049: { name: 'Flash Fryer(Flame Thrower)', ClassIndex: 2, },
+            15054: { name: 'Turbine Torcher(Flame Thrower)', ClassIndex: 2, },
+            15066: { name: 'Autumn(Flame Thrower)', ClassIndex: 2, },
+            15067: { name: 'Pumpkin Patch(Flame Thrower)', ClassIndex: 2, },
+            15068: { name: 'Nutcracker(Flame Thrower)', ClassIndex: 2, },
+            15089: { name: 'Balloonicorn(Flame Thrower)', ClassIndex: 2, },
+            15090: { name: 'Rainbow(Flame Thrower)', ClassIndex: 2, },
+            15115: { name: 'Coffin Nail(Flame Thrower)', ClassIndex: 2, },
+            15141: { name: 'Warhawk(Flame Thrower)', ClassIndex: 2, },
+            30474: { name: 'Nostromo Napalmer', ClassIndex: 2, },
+            12: { name: "Pyro's Shotgun", ClassIndex: 2, },
+            39: { name: 'The Flare Gun', ClassIndex: 2, },
+            199: { name: 'Shotgun (Renamed/Strange)', ClassIndex: 2, },
+            351: { name: 'The Detonator', ClassIndex: 2, },
+            415: { name: 'The Reserve Shooter', ClassIndex: 2, },
+            595: { name: 'The Manmelter', ClassIndex: 2, },
+            740: { name: 'The Scorch Shot', ClassIndex: 2, },
+            1081: { name: 'Festive Flare Gun', ClassIndex: 2, },
+            1141: { name: 'Festive Shotgun', ClassIndex: 2, },
+            1153: { name: 'Panic Attack', ClassIndex: 2, },
+            1179: { name: 'Thermal Thruster', ClassIndex: 2, },
+            1180: { name: 'Gas Passer', ClassIndex: 2, },
+            15003: { name: 'Backwoods Boomstick(Shotgun)', ClassIndex: 2, },
+            15016: { name: 'Rustic Ruiner(Shotgun)', ClassIndex: 2, },
+            15044: { name: 'Civic Duty(Shotgun)', ClassIndex: 2, },
+            15047: { name: 'Lightning Rod(Shotgun)', ClassIndex: 2, },
+            15085: { name: 'Autumn(Shotgun)', ClassIndex: 2, },
+            15109: { name: 'Flower Power(Shotgun)', ClassIndex: 2, },
+            15132: { name: 'Coffin Nail(Shotgun)', ClassIndex: 2, },
+            15133: { name: 'Dressed to Kill(Shotgun)', ClassIndex: 2, },
+            15152: { name: 'Red Bear(Shotgun)', ClassIndex: 2, },
+            2: { name: 'Fire Axe', ClassIndex: 2, },
+            38: { name: 'The Axtinguisher', ClassIndex: 2, },
+            153: { name: 'Homewrecker', ClassIndex: 2, },
+            192: { name: 'Fire Axe (Renamed/Strange)', ClassIndex: 2, },
+            214: { name: 'The Powerjack', ClassIndex: 2, },
+            264: { name: 'Frying Pan', ClassIndex: 2, },
+            326: { name: 'The Back Scratcher', ClassIndex: 2, },
+            348: { name: 'Sharpened Volcano Fragment', ClassIndex: 2, },
+            423: { name: 'Saxxy', ClassIndex: 2, },
+            457: { name: 'The Postal Pummeler', ClassIndex: 2, },
+            466: { name: 'The Maul', ClassIndex: 2, },
+            474: { name: 'The Conscientious Objector', ClassIndex: 2, },
+            593: { name: 'The Third Degree', ClassIndex: 2, },
+            739: { name: 'The Lollichop', ClassIndex: 2, },
+            813: { name: 'Neon Annihilator', ClassIndex: 2, },
+            834: { name: 'Neon Annihilator (Genuine)', ClassIndex: 2, },
+            880: { name: 'The Freedom Staff', ClassIndex: 2, },
+            939: { name: 'The Bat Outta Hell', ClassIndex: 2, },
+            954: { name: 'The Memory Maker', ClassIndex: 2, },
+            1000: { name: 'The Festive Axtinguisher', ClassIndex: 2, },
+            1013: { name: 'The Ham Shank', ClassIndex: 2, },
+            1071: { name: 'Gold Frying Pan', ClassIndex: 2, },
+            1123: { name: 'The Necro Smasher', ClassIndex: 2, },
+            1127: { name: 'The Crossing Guard', ClassIndex: 2, },
+            1181: { name: 'Hot Hand', ClassIndex: 2, },
+            30758: { name: 'Prinny Machete', ClassIndex: 2, },
+            19: { name: 'Grenade Launcher', ClassIndex: 3, },
+            206: { name: 'Grenade Launcher (Renamed/Strange)', ClassIndex: 3, },
+            308: { name: 'The Loch-n-Load', ClassIndex: 3, },
+            405: { name: "Ali Baba's Wee Booties", ClassIndex: 3, },
+            608: { name: 'The Bootlegger', ClassIndex: 3, },
+            996: { name: 'The Loose Cannon', ClassIndex: 3, },
+            1007: { name: 'Festive Grenade Launcher', ClassIndex: 3, },
+            1101: { name: 'The B.A.S.E. Jumper', ClassIndex: 3, },
+            1151: { name: 'The Iron Bomber', ClassIndex: 3, },
+            15077: { name: 'Autumn', ClassIndex: 3, },
+            15079: { name: 'Macabre Web', ClassIndex: 3, },
+            15091: { name: 'Rainbow', ClassIndex: 3, },
+            15092: { name: 'Sweet Dreams', ClassIndex: 3, },
+            15116: { name: 'Coffin Nail', ClassIndex: 3, },
+            15117: { name: 'Top Shelf', ClassIndex: 3, },
+            15142: { name: 'Warhawk', ClassIndex: 3, },
+            15158: { name: 'Butcher Bird', ClassIndex: 3, },
+            20: { name: 'Stickybomb Launcher', ClassIndex: 3, },
+            130: { name: 'The Scottish Resistance', ClassIndex: 3, },
+            131: { name: "The Chargin' Targe", ClassIndex: 3, },
+            207: { name: 'Stickybomb Launcher (Renamed/Strange)', ClassIndex: 3, },
+            265: { name: 'Sticky Jumper', ClassIndex: 3, },
+            406: { name: 'The Splendid Screen', ClassIndex: 3, },
+            661: { name: 'Festive Stickybomb Launcher', ClassIndex: 3, },
+            797: { name: 'Silver Botkiller Stickybomb Launcher Mk.I', ClassIndex: 3, },
+            806: { name: 'Gold Botkiller Stickybomb Launcher Mk.I', ClassIndex: 3, },
+            886: { name: 'Rust Botkiller Stickybomb Launcher Mk.I', ClassIndex: 3, },
+            895: { name: 'Blood Botkiller Stickybomb Launcher Mk.I', ClassIndex: 3, },
+            904: { name: 'Carbonado Botkiller Stickybomb Launcher Mk.I', ClassIndex: 3, },
+            913: { name: 'Diamond Botkiller Stickybomb Launcher Mk.I', ClassIndex: 3, },
+            962: { name: 'Silver Botkiller Stickybomb Launcher Mk.II', ClassIndex: 3, },
+            971: { name: 'Gold Botkiller Stickybomb Launcher Mk.II', ClassIndex: 3, },
+            1099: { name: 'The Tide Turner', ClassIndex: 3, },
+            1144: { name: 'Festive Targe', ClassIndex: 3, },
+            1150: { name: 'The Quickiebomb Launcher', ClassIndex: 3, },
+            15009: { name: 'Sudden Flurry(Grenade Launcher)', ClassIndex: 3, },
+            15012: { name: 'Carpet Bomber(Grenade Launcher)', ClassIndex: 3, },
+            15024: { name: 'Blasted Bombardier(Grenade Launcher)', ClassIndex: 3, },
+            15038: { name: 'Rooftop Wrangler(Grenade Launcher)', ClassIndex: 3, },
+            15045: { name: 'Liquid Asset(Grenade Launcher)', ClassIndex: 3, },
+            15048: { name: 'Pink Elephant(Grenade Launcher)', ClassIndex: 3, },
+            15082: { name: 'Autumn(Grenade Launcher)', ClassIndex: 3, },
+            15083: { name: 'Pumpkin Patch(Grenade Launcher)', ClassIndex: 3, },
+            15084: { name: 'Macabre Web(Grenade Launcher)', ClassIndex: 3, },
+            15113: { name: 'Sweet Dreams(Grenade Launcher)', ClassIndex: 3, },
+            15137: { name: 'Coffin Nail(Grenade Launcher)', ClassIndex: 3, },
+            15138: { name: 'Dressed to Kill(Grenade Launcher)', ClassIndex: 3, },
+            15155: { name: 'Blitzkrieg(Grenade Launcher)', ClassIndex: 3, },
+            1: { name: 'Bottle', ClassIndex: 3, },
+            132: { name: 'The Eyelander', ClassIndex: 3, },
+            154: { name: 'The Pain Train', ClassIndex: 3, },
+            172: { name: "The Scotsman's Skullcutter", ClassIndex: 3, },
+            191: { name: 'Bottle (Renamed/Strange)', ClassIndex: 3, },
+            264: { name: 'Frying Pan', ClassIndex: 3, },
+            266: { name: "Horseless Headless Horsemann's Headtaker", ClassIndex: 3, },
+            307: { name: 'Ullapool Caber', ClassIndex: 3, },
+            327: { name: 'The Claidheamh Mòr', ClassIndex: 3, },
+            357: { name: 'The Half-Zatoichi', ClassIndex: 3, },
+            404: { name: 'The Persian Persuader', ClassIndex: 3, },
+            423: { name: 'Saxxy', ClassIndex: 3, },
+            474: { name: 'The Conscientious Objector', ClassIndex: 3, },
+            482: { name: "Nessie's Nine Iron", ClassIndex: 3, },
+            609: { name: 'The Scottish Handshake', ClassIndex: 3, },
+            880: { name: 'The Freedom Staff', ClassIndex: 3, },
+            939: { name: 'The Bat Outta Hell', ClassIndex: 3, },
+            954: { name: 'The Memory Maker', ClassIndex: 3, },
+            1013: { name: 'The Ham Shank', ClassIndex: 3, },
+            1071: { name: 'Gold Frying Pan', ClassIndex: 3, },
+            1082: { name: 'Festive Eyelander', ClassIndex: 3, },
+            1123: { name: 'The Necro Smasher', ClassIndex: 3, },
+            1127: { name: 'The Crossing Guard', ClassIndex: 3, },
+            30758: { name: 'Prinny Machete', ClassIndex: 3, },
+            15: { name: 'Minigun', ClassIndex: 4, },
+            41: { name: 'Natascha', ClassIndex: 4, },
+            202: { name: 'Minigun (Renamed/Strange)', ClassIndex: 4, },
+            298: { name: 'Iron Curtain', ClassIndex: 4, },
+            312: { name: 'The Brass Beast', ClassIndex: 4, },
+            424: { name: 'Tomislav', ClassIndex: 4, },
+            654: { name: 'Festive Minigun', ClassIndex: 4, },
+            793: { name: 'Silver Botkiller Minigun Mk.I', ClassIndex: 4, },
+            802: { name: 'Gold Botkiller Minigun Mk.I', ClassIndex: 4, },
+            811: { name: 'The Huo-Long Heater', ClassIndex: 4, },
+            832: { name: 'The Huo-Long Heater (Genuine)', ClassIndex: 4, },
+            850: { name: 'Deflector (MvM only?)', ClassIndex: 4, },
+            882: { name: 'Rust Botkiller Minigun Mk.I', ClassIndex: 4, },
+            891: { name: 'Blood Botkiller Minigun Mk.I', ClassIndex: 4, },
+            900: { name: 'Carbonado Botkiller Minigun Mk.I', ClassIndex: 4, },
+            909: { name: 'Diamond Botkiller Minigun Mk.I', ClassIndex: 4, },
+            958: { name: 'Silver Botkiller Minigun Mk.II', ClassIndex: 4, },
+            967: { name: 'Gold Botkiller Minigun Mk.II', ClassIndex: 4, },
+            15004: { name: 'King of the Jungle(Minigun)', ClassIndex: 4, },
+            15020: { name: 'Iron Wood(Minigun)', ClassIndex: 4, },
+            15026: { name: 'Antique Annihilator(Minigun)', ClassIndex: 4, },
+            15031: { name: 'War Room(Minigun)', ClassIndex: 4, },
+            15040: { name: 'Citizen Pain(Minigun)', ClassIndex: 4, },
+            15055: { name: 'Brick House(Minigun)', ClassIndex: 4, },
+            15086: { name: 'Macabre Web(Minigun)', ClassIndex: 4, },
+            15087: { name: 'Pumpkin Patch(Minigun)', ClassIndex: 4, },
+            15088: { name: 'Nutcracker(Minigun)', ClassIndex: 4, },
+            15098: { name: 'Brain Candy(Minigun)', ClassIndex: 4, },
+            15099: { name: 'Mister Cuddles(Minigun)', ClassIndex: 4, },
+            15123: { name: 'Coffin Nail(Minigun)', ClassIndex: 4, },
+            15124: { name: 'Dressed to Kill(Minigun)', ClassIndex: 4, },
+            15125: { name: 'Top Shelf(Minigun)', ClassIndex: 4, },
+            15147: { name: 'Butcher Bird(Minigun)', ClassIndex: 4, },
+            11: { name: "Heavy's Shotgun", ClassIndex: 4, },
+            42: { name: 'Sandvich', ClassIndex: 4, },
+            159: { name: 'The Dalokohs Bar', ClassIndex: 4, },
+            199: { name: 'Shotgun (Renamed/Strange)', ClassIndex: 4, },
+            311: { name: 'The Buffalo Steak Sandvich', ClassIndex: 4, },
+            425: { name: 'The Family Business', ClassIndex: 4, },
+            433: { name: 'Fishcake', ClassIndex: 4, },
+            863: { name: 'Robo-Sandvich', ClassIndex: 4, },
+            1002: { name: 'Festive Sandvich', ClassIndex: 4, },
+            1141: { name: 'Festive Shotgun', ClassIndex: 4, },
+            1153: { name: 'Panic Attack', ClassIndex: 4, },
+            1190: { name: 'Second Banana', ClassIndex: 4, },
+            15003: { name: 'Backwoods Boomstick(Shotgun)', ClassIndex: 4, },
+            15016: { name: 'Rustic Ruiner(Shotgun)', ClassIndex: 4, },
+            15044: { name: 'Civic Duty(Shotgun)', ClassIndex: 4, },
+            15047: { name: 'Lightning Rod(Shotgun)', ClassIndex: 4, },
+            15085: { name: 'Autumn(Shotgun)', ClassIndex: 4, },
+            15109: { name: 'Flower Power(Shotgun)', ClassIndex: 4, },
+            15132: { name: 'Coffin Nail(Shotgun)', ClassIndex: 4, },
+            15133: { name: 'Dressed to Kill(Shotgun)', ClassIndex: 4, },
+            15152: { name: 'Red Bear(Shotgun)', ClassIndex: 4, },
+            5: { name: 'Fists', ClassIndex: 4, },
+            43: { name: 'The Killing Gloves of Boxing', ClassIndex: 4, },
+            195: { name: 'Fists (Renamed/Strange)', ClassIndex: 4, },
+            239: { name: 'Gloves of Running Urgently', ClassIndex: 4, },
+            264: { name: 'Frying Pan', ClassIndex: 4, },
+            310: { name: "Warrior's Spirit", ClassIndex: 4, },
+            331: { name: 'Fists of Steel', ClassIndex: 4, },
+            423: { name: 'Saxxy', ClassIndex: 4, },
+            426: { name: 'The Eviction Notice', ClassIndex: 4, },
+            474: { name: 'The Conscientious Objector', ClassIndex: 4, },
+            587: { name: 'Apoco-Fists', ClassIndex: 4, },
+            656: { name: 'The Holiday Punch', ClassIndex: 4, },
+            880: { name: 'The Freedom Staff', ClassIndex: 4, },
+            939: { name: 'The Bat Outta Hell', ClassIndex: 4, },
+            954: { name: 'The Memory Maker', ClassIndex: 4, },
+            1013: { name: 'The Ham Shank', ClassIndex: 4, },
+            1071: { name: 'Gold Frying Pan', ClassIndex: 4, },
+            1084: { name: 'Festive Gloves of Running Urgently (G.R.U.)', ClassIndex: 4, },
+            1100: { name: 'The Bread Bite', ClassIndex: 4, },
+            1123: { name: 'The Necro Smasher', ClassIndex: 4, },
+            1127: { name: 'The Crossing Guard', ClassIndex: 4, },
+            1184: { name: 'Gloves of Running Urgently MvM', ClassIndex: 4, },
+            30758: { name: 'Prinny Machete', ClassIndex: 4, },
+            9: { name: "Engineer's Shotgun", ClassIndex: 5, },
+            141: { name: 'The Frontier Justice', ClassIndex: 5, },
+            199: { name: 'Shotgun (Renamed/Strange)', ClassIndex: 5, },
+            527: { name: 'The Widowmaker', ClassIndex: 5, },
+            588: { name: 'The Pomson 6000', ClassIndex: 5, },
+            997: { name: 'The Rescue Ranger', ClassIndex: 5, },
+            1004: { name: 'Festive Frontier Justice', ClassIndex: 5, },
+            1141: { name: 'Festive Shotgun', ClassIndex: 5, },
+            1153: { name: 'Panic Attack', ClassIndex: 5, },
+            15003: { name: 'Backwoods Boomstick(Shotgun)', ClassIndex: 5, },
+            15016: { name: 'Rustic Ruiner(Shotgun)', ClassIndex: 5, },
+            15044: { name: 'Civic Duty(Shotgun)', ClassIndex: 5, },
+            15047: { name: 'Lightning Rod(Shotgun)', ClassIndex: 5, },
+            15085: { name: 'Autumn(Shotgun)', ClassIndex: 5, },
+            15109: { name: 'Flower Powe(Shotgun)', ClassIndex: 5, },
+            15132: { name: 'Coffin Nail(Shotgun)', ClassIndex: 5, },
+            15133: { name: 'Dressed to Kill(Shotgun)', ClassIndex: 5, },
+            15152: { name: 'Red Bear(Shotgun)', ClassIndex: 5, },
+            22: { name: "Engineer's Pistol", ClassIndex: 5, },
+            140: { name: 'The Wrangler', ClassIndex: 5, },
+            160: { name: 'Vintage Lugermorph', ClassIndex: 5, },
+            209: { name: 'Pistol (Renamed/Strange)', ClassIndex: 5, },
+            294: { name: 'Lugermorph', ClassIndex: 5, },
+            528: { name: 'The Short Circuit', ClassIndex: 5, },
+            1086: { name: 'Festive Wrangler', ClassIndex: 5, },
+            15013: { name: 'Red Rock Roscoe(Pistol)', ClassIndex: 5, },
+            15018: { name: 'Homemade Heater(Pistol)', ClassIndex: 5, },
+            15035: { name: 'Hickory Holepuncher(Pistol)', ClassIndex: 5, },
+            15041: { name: 'Local Hero(Pistol)', ClassIndex: 5, },
+            15046: { name: 'Black Dahlia(Pistol)', ClassIndex: 5, },
+            15056: { name: 'Sandstone Special(Pistol)', ClassIndex: 5, },
+            15060: { name: 'Macabre Web(Pistol)', ClassIndex: 5, },
+            15061: { name: 'Nutcracker(Pistol)', ClassIndex: 5, },
+            15100: { name: 'Blue Mew(Pistol)', ClassIndex: 5, },
+            15101: { name: 'Brain Candy(Pistol)', ClassIndex: 5, },
+            15102: { name: 'Shot to Hell(Pistol)', ClassIndex: 5, },
+            15126: { name: 'Dressed To Kill(Pistol)', ClassIndex: 5, },
+            15148: { name: 'Blitzkrieg(Pistol)', ClassIndex: 5, },
+            30666: { name: 'The C.A.P.P.E.R.', ClassIndex: 5, },
+            30668: { name: 'The Gigar Counter', ClassIndex: 5, },
+            7: { name: 'Wrench', ClassIndex: 5, },
+            142: { name: 'The Gunslinger', ClassIndex: 5, },
+            155: { name: 'The Southern Hospitality', ClassIndex: 5, },
+            169: { name: 'Golden Wrench', ClassIndex: 5, },
+            197: { name: 'Wrench (Renamed/Strange)', ClassIndex: 5, },
+            329: { name: 'The Jag', ClassIndex: 5, },
+            423: { name: 'Saxxy', ClassIndex: 5, },
+            589: { name: 'The Eureka Effect', ClassIndex: 5, },
+            662: { name: 'Festive Wrench', ClassIndex: 5, },
+            795: { name: 'Silver Botkiller Wrench Mk.I', ClassIndex: 5, },
+            804: { name: 'Gold Botkiller Wrench Mk.I', ClassIndex: 5, },
+            884: { name: 'Rust Botkiller Wrench Mk.I', ClassIndex: 5, },
+            893: { name: 'Blood Botkiller Wrench Mk.I', ClassIndex: 5, },
+            902: { name: 'Carbonado Botkiller Wrench Mk.I', ClassIndex: 5, },
+            911: { name: 'Diamond Botkiller Wrench Mk.I', ClassIndex: 5, },
+            960: { name: 'Silver Botkiller Wrench Mk.II', ClassIndex: 5, },
+            969: { name: 'Gold Botkiller Wrench Mk.II', ClassIndex: 5, },
+            1071: { name: 'Gold Frying Pan', ClassIndex: 5, },
+            1123: { name: 'The Necro Smasher', ClassIndex: 5, },
+            15073: { name: 'Nutcracker(Wrench)', ClassIndex: 5, },
+            15074: { name: 'Autumn(Wrench)', ClassIndex: 5, },
+            15075: { name: 'Boneyard(Wrench)', ClassIndex: 5, },
+            15114: { name: 'Torqued to Hell(Wrench)', ClassIndex: 5, },
+            15139: { name: 'Dressed to Kill(Wrench)', ClassIndex: 5, },
+            15140: { name: 'Top Shelf(Wrench)', ClassIndex: 5, },
+            15156: { name: 'Airwolf(Wrench)', ClassIndex: 5, },
+            30758: { name: 'Prinny Machete', ClassIndex: 5, },
+            17: { name: 'Syringe Gun', ClassIndex: 6, },
+            36: { name: 'The Blutsauger', ClassIndex: 6, },
+            204: { name: 'Syringe Gun (Renamed/Strange)', ClassIndex: 6, },
+            305: { name: "Crusader's Crossbow", ClassIndex: 6, },
+            412: { name: 'The Overdose', ClassIndex: 6, },
+            1079: { name: "Festive Crusader's Crossbow", ClassIndex: 6, },
+            29: { name: 'Medi Gun', ClassIndex: 6, },
+            35: { name: 'The Kritzkrieg', ClassIndex: 6, },
+            211: { name: 'Medi Gun(Renamed/Strange)', ClassIndex: 6, },
+            411: { name: 'The Quick-Fix', ClassIndex: 6, },
+            663: { name: 'Festive Medi Gun', ClassIndex: 6, },
+            796: { name: 'Silver Botkiller Medi Gun Mk.I', ClassIndex: 6, },
+            805: { name: 'Gold Botkiller Medi Gun Mk.I', ClassIndex: 6, },
+            885: { name: 'Rust Botkiller Medi Gun Mk.I', ClassIndex: 6, },
+            894: { name: 'Blood Botkiller Medi Gun Mk.I', ClassIndex: 6, },
+            903: { name: 'Carbonado Botkiller Medi Gun Mk.I', ClassIndex: 6, },
+            912: { name: 'Diamond Botkiller Medi Gun Mk.I', ClassIndex: 6, },
+            961: { name: 'Silver Botkiller Medi Gun Mk.II', ClassIndex: 6, },
+            970: { name: 'Gold Botkiller Medi Gun Mk.II', ClassIndex: 6, },
+            998: { name: 'The Vaccinator', ClassIndex: 6, },
+            15008: { name: 'Masked Mender(Medi Gun)', ClassIndex: 6, },
+            15010: { name: 'Wrapped Reviver(Medi Gun)', ClassIndex: 6, },
+            15025: { name: 'Reclaimed Reanimator(Medi Gun)', ClassIndex: 6, },
+            15039: { name: 'Civil Servant(Medi Gun)', ClassIndex: 6, },
+            15050: { name: 'Spark of Life(Medi Gun)', ClassIndex: 6, },
+            15078: { name: 'Wildwood(Medi Gun)', ClassIndex: 6, },
+            15097: { name: 'Flower Power(Medi Gun)', ClassIndex: 6, },
+            15121: { name: 'Dressed To Kill(Medi Gun)', ClassIndex: 6, },
+            15122: { name: "High Roller's(Medi Gun)", ClassIndex: 6, },
+            15123: { name: 'Coffin Nail(Medi Gun)', ClassIndex: 6, },
+            15145: { name: 'Blitzkrieg(Medi Gun)', ClassIndex: 6, },
+            15146: { name: 'Corsair(Medi Gun)', ClassIndex: 6, },
+            8: { name: 'Bonesaw', ClassIndex: 6, },
+            37: { name: 'The Ubersaw', ClassIndex: 6, },
+            173: { name: 'The Vita-Saw', ClassIndex: 6, },
+            198: { name: 'Bonesaw (Renamed/Strange)', ClassIndex: 6, },
+            264: { name: 'Frying Pan', ClassIndex: 6, },
+            304: { name: 'Amputator', ClassIndex: 6, },
+            413: { name: 'The Solemn Vow', ClassIndex: 6, },
+            423: { name: 'Saxxy', ClassIndex: 6, },
+            474: { name: 'The Conscientious Objector', ClassIndex: 6, },
+            880: { name: 'The Freedom Staff', ClassIndex: 6, },
+            939: { name: 'The Bat Outta Hell', ClassIndex: 6, },
+            954: { name: 'The Memory Maker', ClassIndex: 6, },
+            1003: { name: 'Festive Ubersaw', ClassIndex: 6, },
+            1013: { name: 'The Ham Shank', ClassIndex: 6, },
+            1071: { name: 'Gold Frying Pan', ClassIndex: 6, },
+            1123: { name: 'The Necro Smasher', ClassIndex: 6, },
+            1127: { name: 'The Crossing Guard', ClassIndex: 6, },
+            1143: { name: 'Festive Bonesaw', ClassIndex: 6, },
+            30758: { name: 'Prinny Machete', ClassIndex: 6, },
+            14: { name: 'Sniper Rifle', ClassIndex: 7, },
+            56: { name: 'The Huntsman', ClassIndex: 7, },
+            201: { name: 'Sniper Rifle (Renamed/Strange)', ClassIndex: 7, },
+            230: { name: 'The Sydney Sleeper', ClassIndex: 7, },
+            402: { name: 'The Bazaar Bargain', ClassIndex: 7, },
+            526: { name: 'The Machina', ClassIndex: 7, },
+            664: { name: 'Festive Sniper Rifle', ClassIndex: 7, },
+            752: { name: "The Hitman's Heatmaker", ClassIndex: 7, },
+            792: { name: 'Silver Botkiller Sniper Rifle Mk.I', ClassIndex: 7, },
+            801: { name: 'Gold Botkiller Sniper Rifle Mk.I', ClassIndex: 7, },
+            851: { name: 'The AWPer Hand', ClassIndex: 7, },
+            881: { name: 'Rust Botkiller Sniper Rifle Mk.I', ClassIndex: 7, },
+            890: { name: 'Blood Botkiller Sniper Rifle Mk.I', ClassIndex: 7, },
+            899: { name: 'Carbonado Botkiller Sniper Rifle Mk.I', ClassIndex: 7, },
+            908: { name: 'Diamond Botkiller Sniper Rifle Mk.I', ClassIndex: 7, },
+            957: { name: 'Silver Botkiller Sniper Rifle Mk.II', ClassIndex: 7, },
+            966: { name: 'Gold Botkiller Sniper Rifle Mk.II', ClassIndex: 7, },
+            1005: { name: 'Festive Huntsman', ClassIndex: 7, },
+            1092: { name: 'The Fortified Compound', ClassIndex: 7, },
+            1098: { name: 'The Classic', ClassIndex: 7, },
+            15000: { name: 'Night Owl(Sniper Rifle)', ClassIndex: 7, },
+            15007: { name: 'Purple Range(Sniper Rifle)', ClassIndex: 7, },
+            15019: { name: 'Lumber From Down Under(Sniper Rifle)', ClassIndex: 7, },
+            15023: { name: 'Shot in the Dark(Sniper Rifle)', ClassIndex: 7, },
+            15033: { name: 'Bogtrotter(Sniper Rifle)', ClassIndex: 7, },
+            15059: { name: 'Thunderbolt(Sniper Rifle)', ClassIndex: 7, },
+            15070: { name: 'Pumpkin Patch(Sniper Rifle)', ClassIndex: 7, },
+            15071: { name: 'Boneyard(Sniper Rifle)', ClassIndex: 7, },
+            15072: { name: 'Wildwood(Sniper Rifle)', ClassIndex: 7, },
+            15111: { name: 'Balloonicorn(Sniper Rifle)', ClassIndex: 7, },
+            15112: { name: 'Rainbow(Sniper Rifle)', ClassIndex: 7, },
+            15135: { name: 'Coffin Nail(Sniper Rifle)', ClassIndex: 7, },
+            15136: { name: 'Dressed to Kill(Sniper Rifle)', ClassIndex: 7, },
+            15154: { name: 'Airwolf(Sniper Rifle)', ClassIndex: 7, },
+            30665: { name: 'Shooting Star(Sniper Rifle)', ClassIndex: 7, },
+            16: { name: 'SMG', ClassIndex: 7, },
+            57: { name: 'The Razorback', ClassIndex: 7, },
+            58: { name: 'Jarate', ClassIndex: 7, },
+            203: { name: 'SMG (Renamed/Strange)', ClassIndex: 7, },
+            231: { name: "Darwin's Danger Shield", ClassIndex: 7, },
+            642: { name: 'Cozy Camper', ClassIndex: 7, },
+            751: { name: "The Cleaner's Carbine", ClassIndex: 7, },
+            1083: { name: 'Festive Jarate', ClassIndex: 7, },
+            1105: { name: 'The Self-Aware Beauty Mark', ClassIndex: 7, },
+            1149: { name: 'Festive SMG', ClassIndex: 7, },
+            15001: { name: 'Woodsy Widowmaker(SMG)', ClassIndex: 7, },
+            15022: { name: 'Plaid Potshotter(SMG)', ClassIndex: 7, },
+            15032: { name: 'Treadplate Tormenter(SMG)', ClassIndex: 7, },
+            15037: { name: 'Team Sprayer(SMG)', ClassIndex: 7, },
+            15058: { name: 'Low Profile(SMG)', ClassIndex: 7, },
+            15076: { name: 'Wildwood(SMG)', ClassIndex: 7, },
+            15110: { name: 'Blue Mew(SMG)', ClassIndex: 7, },
+            15134: { name: "High Roller's(SMG)", ClassIndex: 7, },
+            15153: { name: 'Blitzkrieg(SMG)', ClassIndex: 7, },
+            3: { name: 'Kukri', ClassIndex: 7, },
+            171: { name: "The Tribalman's Shiv", ClassIndex: 7, },
+            193: { name: 'Kukri (Renamed/Strange)', ClassIndex: 7, },
+            232: { name: 'The Bushwacka', ClassIndex: 7, },
+            264: { name: 'Frying Pan', ClassIndex: 7, },
+            401: { name: 'The Shahanshah', ClassIndex: 7, },
+            423: { name: 'Saxxy', ClassIndex: 7, },
+            474: { name: 'The Conscientious Objector', ClassIndex: 7, },
+            880: { name: 'The Freedom Staff', ClassIndex: 7, },
+            939: { name: 'The Bat Outta Hell', ClassIndex: 7, },
+            954: { name: 'The Memory Maker', ClassIndex: 7, },
+            1013: { name: 'The Ham Shank', ClassIndex: 7, },
+            1071: { name: 'Gold Frying Pan', ClassIndex: 7, },
+            1123: { name: 'The Necro Smasher', ClassIndex: 7, },
+            1127: { name: 'The Crossing Guard', ClassIndex: 7, },
+            30758: { name: 'Prinny Machete', ClassIndex: 7, },
+            24: { name: 'Revolver', ClassIndex: 8 },
+            61: { name: 'The Ambassador', ClassIndex: 8 },
+            161: { name: 'Big Kill', ClassIndex: 8 },
+            210: { name: 'Revolver (Renamed/Strange)', ClassIndex: 8 },
+            224: { name: "L'Etranger", ClassIndex: 8 },
+            460: { name: 'The Enforcer', ClassIndex: 8 },
+            525: { name: 'The Diamondback', ClassIndex: 8 },
+            1006: { name: 'Festive Ambassador', ClassIndex: 8 },
+            1142: { name: 'Festive Revolver', ClassIndex: 8 },
+            15011: { name: 'Psychedelic Slugger(Revolver)', ClassIndex: 8 },
+            15027: { name: 'Old Country(Revolver)', ClassIndex: 8 },
+            15042: { name: 'Mayor(Revolver)', ClassIndex: 8 },
+            15051: { name: 'Dead Reckoner(Revolver)', ClassIndex: 8 },
+            15062: { name: 'Boneyard(Revolver)', ClassIndex: 8 },
+            15063: { name: 'Wildwood(Revolver)', ClassIndex: 8 },
+            15064: { name: 'Macabre Web(Revolver)', ClassIndex: 8 },
+            15103: { name: 'Flower Power(Revolver)', ClassIndex: 8 },
+            15127: { name: 'Coffin Nail(Revolver)', ClassIndex: 8 },
+            15128: { name: 'Top Shelf(Revolver)', ClassIndex: 8 },
+            15149: { name: 'Blitzkrieg(Revolver)', ClassIndex: 8 },
+            735: { name: 'Sapper', ClassIndex: 8 },
+            736: { name: 'Sapper (Renamed/Strange)', ClassIndex: 8 },
+            810: { name: 'The Red-Tape Recorder', ClassIndex: 8 },
+            831: { name: 'The Red-Tape Recorder (Genuine)', ClassIndex: 8 },
+            933: { name: 'The Ap-Sap (Genuine)', ClassIndex: 8 },
+            1080: { name: 'Festive Sapper', ClassIndex: 8 },
+            1102: { name: 'The Snack Attack', ClassIndex: 8 },
+            4: { name: 'Knife', ClassIndex: 8 },
+            194: { name: 'Knife (Renamed/Strange)', ClassIndex: 8 },
+            225: { name: 'Your Eternal Reward', ClassIndex: 8 },
+            356: { name: "Conniver's Kunai", ClassIndex: 8 },
+            423: { name: 'Saxxy', ClassIndex: 8 },
+            461: { name: 'The Big Earner', ClassIndex: 8 },
+            574: { name: 'The Wanga Prick', ClassIndex: 8 },
+            638: { name: 'The Sharp Dresser', ClassIndex: 8 },
+            649: { name: 'The Spy-cicle', ClassIndex: 8 },
+            665: { name: 'Festive Knife', ClassIndex: 8 },
+            727: { name: 'The Black Rose', ClassIndex: 8 },
+            794: { name: 'Silver Botkiller Knife Mk.I', ClassIndex: 8 },
+            803: { name: 'Gold Botkiller Knife Mk.I', ClassIndex: 8 },
+            883: { name: 'Rust Botkiller Knife Mk.I', ClassIndex: 8 },
+            892: { name: 'Blood Botkiller Knife Mk.I', ClassIndex: 8 },
+            901: { name: 'Carbonado Botkiller Knife Mk.I', ClassIndex: 8 },
+            910: { name: 'Diamond Botkiller Knife Mk.I', ClassIndex: 8 },
+            959: { name: 'Silver Botkiller Knife Mk.II', ClassIndex: 8 },
+            968: { name: 'Gold Botkiller Knife Mk.II', ClassIndex: 8 },
+            1071: { name: 'Gold Frying Pan', ClassIndex: 8 },
+            15062: { name: 'Boneyard(Knife)', ClassIndex: 8 },
+            15094: { name: 'Blue Mew(Knife)', ClassIndex: 8 },
+            15095: { name: 'Brain Candy(Knife)', ClassIndex: 8 },
+            15096: { name: 'Stabbed to Hell(Knife)', ClassIndex: 8 },
+            15118: { name: 'Dressed to Kill(Knife)', ClassIndex: 8 },
+            15119: { name: 'Top Shelf(Knife)', ClassIndex: 8 },
+            15143: { name: 'Blitzkrieg(Knife)', ClassIndex: 8 },
+            15144: { name: 'Airwolf(Knife)', ClassIndex: 8 },
+            30758: { name: 'Prinny Machete', ClassIndex: 8 },
+            30: { name: 'Invis Watch', ClassIndex: 8 },
+            59: { name: 'The Dead Ringer', ClassIndex: 8 },
+            60: { name: 'The Cloak and Dagger', ClassIndex: 8 },
+            212: { name: 'Invis Watch (Renamed/Strange)', ClassIndex: 8 },
+            297: { name: "Enthusiast's Timepiece", ClassIndex: 8 },
+            947: { name: 'The Quackenbirdt', ClassIndex: 8 },
+        }
+        var All_weapon = [
+            //['ClassName Weapon',[index],slot]
+
+
+            //Scout
+            [
+                ['tf_weapon_scattergun', [13, 200, 45, 669, 799, 808, 888, 897, 906, 915, 964, 973, 1078, 1103, 15002, 15015, 15021, 15029, 15036, 15053, 15065, 15069, 15106, 15107, 15108, 15131, 15151, 15157], 1],
+                ['tf_weapon_handgun_scout_primary', [220], 1],
+                ['tf_weapon_soda_popper', [448], 1],
+                ['tf_weapon_pep_brawler_blaster', [772], 1],
+                ['tf_weapon_pistol', [23, 209, 160, 294, 15013, 15018, 15035, 15041, 15046, 15056, 15060, 15061, 15100, 15101, 15102, 15126, 15148, 30666], 2],
+                ['tf_weapon_lunchbox_drink', [46, 163, 1145], 2],
+                ['tf_weapon_jar_milk', [222, 1121], 2],
+                ['tf_weapon_handgun_scout_secondary', [449, 773], 2],
+                ['tf_weapon_cleaver', [812, 833], 2],
+                ['tf_weapon_bat', [0, 317, 325, 349, 355, 660, 30667], 3],
+                ['tf_weapon_bat_wood', [44], 3],
+                ['tf_weapon_bat_fish', [221, 572, 999], 3],
+                ['tf_weapon_bat_giftwrap', [648], 3],
+                ['saxxy', [423, 1071, 1123, 30758, 474, 880, 939, 954, 1013, 1127, 264], 3],
+            ],
+
+
+
+
+
+            //Soldier
+            [
+                ['tf_weapon_rocketlauncher', [18, 228, 237, 414, 513, 658, 730, 800, 907, 889, 907, 916, 965, 974, 1085, 15028, 15014, 15006, 15081, 15104, 15105, 15129, 15130, 15130, 15150], 1],
+                ['tf_weapon_rocketlauncher_directhit', [127], 1],
+                ['tf_weapon_particle_cannon', [441], 1],
+                ['tf_weapon_rocketlauncher_airstrike', [1104], 1],
+                ['tf_weapon_buff_item', [129, 226, 354], 2],
+                ['tf_weapon_raygun', [442], 2],
+                ['tf_weapon_shotgun', [199, 1141, 1153, 15003, 15016, 15044, 15047, 15085, 415], 2],
+                ['tf_weapon_shovel', [6, 196, 128, 154, 264, 447, 775, 416], 3],
+                ['tf_weapon_katana', [357], 3],
+                ['saxxy', [423, 1071, 1123, 30758, 474, 880, 939, 954, 1013, 1127, 264], 3],
+            ],
+
+
+
+
+
+            //Pyro
+            [
+                ['tf_weapon_flamethrower', [21, 208, 40, 215, 594, 659, 741, 798, 887, 896, 905, 914, 963, 972, 1146, 15005, 15141, 15067, 15090, 15089, 15030, 15034, 15049, 30474, 15115], 1],
+                ['tf_weapon_rocketlauncher_fireball', [1178], 1],
+                ['tf_weapon_flaregun', [39, 351, 740, 1081], 2],
+                ['tf_weapon_rocketpack', [1179], 2],
+                ['tf_weapon_jar_gas', [1180], 2],
+                ['tf_weapon_flaregun_revenge', [595], 2],
+                ['tf_weapon_shotgun', [199, 415, 1141, 1153, 15003, 15016, 15044, 15047, 15085, 15152], 2],
+                ['tf_weapon_fireaxe', [2, 192, 38, 153, 214, 326, 348, 457, 466, 593, 739, 1000], 3],
+                ['tf_weapon_breakable_sign', [813, 834], 3],
+                ['tf_weapon_slap', [1181], 3],
+                ['saxxy', [423, 1071, 1123, 30758, 474, 880, 939, 954, 1013, 1127, 264], 3],
+            ],
+
+
+
+            //Demoman
+            [
+                ['tf_weapon_grenadelauncher', [19, 206, 308, 1007, 1151, 15077, 15091, 15116, 15158, 15142, 15117], 1],
+                ['tf_weapon_cannon', [996], 1],
+                ['tf_weapon_parachute', [1101], 1],
+                ['tf_weapon_pipebomblauncher', [20, 207, 130, 265, 661, 806, 886, 895, 904, 913, 962, 1150, 15009, 15012, 15024, 15038, 15045, 15048, 15082, 15155, 15138, 15137, 15113], 2],
+                //  ['tf_wearable_demoshield', [131, 406, 1099, 1144], 2],
+                ['tf_weapon_bottle', [1, 191, 609], 3],
+                ['tf_weapon_sword', [132, 172, 266, 327, 404, 482], 3],
+                ['tf_weapon_katana', [357], 3],
+                ['tf_weapon_stickbomb', [307], 3],
+                ['saxxy', [423, 1071, 1123, 30758, 474, 880, 939, 954, 1013, 1127, 264], 3],
+            ],
+
+
+
+
+
+            //Heavy
+            [
+                ['tf_weapon_minigun', [15, 202, 41, 298, 312, 424, 654, 793, 802, 811, 882, 891, 900, 909, 958, 967, 15004, 15020, 15026, 15031, 15040, 15055, 15086, 15087, 15088, 15098, 15099, 15123, 15124, 15125, 15147], 1],
+                ['tf_weapon_lunchbox', [42, 159, 311, 433, 863, 1002, 1190], 2],
+                ['tf_weapon_shotgun', [199, 1141, 1153, 15003, 15016, 15044, 15047, 15085, 15109, 15132, 15133, 15152], 2],
+                ['tf_weapon_fists', [5, 195, 43, 239, 310, 331, 426, 587, 656, 1084, 1100, 1184], 3],
+                ['saxxy', [423, 1071, 1123, 30758, 474, 880, 939, 954, 1013, 1127, 264], 3],
+            ],
+
+            //Engineer
+            [
+                ['tf_weapon_sentry_revenge', [141, 1004], 1],
+                ['tf_weapon_shotgun_building_rescue', [997], 1],
+                ['tf_weapon_drg_pomson', [588], 1],
+                ['tf_weapon_shotgun', [199, 1141, 1153, 15003, 15016, 15044, 15047, 15085, 15109, 15132, 15133, 15152], 1],
+                ['tf_weapon_pistol', [22, 209, 160, 294, 15013, 15018, 15035, 15041, 15046, 15056, 15060, 15061, 15100, 15101, 15102, 15126, 15148, 30666, 30668], 2],
+                ['tf_weapon_laser_pointer', [30668, 1086, 140], 2],
+                ['tf_weapon_mechanical_arm', [528], 2],
+                ['tf_weapon_wrench', [7, 197, 155, 169, 329, 589, 662, 795, 804, 884, 893, 902, 911, 960, 969, 15073, 15074, 15075, 15139, 15114, 15156], 3],
+                ['saxxy', [423, 1071, 1123, 30758], 3],
+            ],
+
+
+
+
+
+            //Medic
+            [
+                ['tf_weapon_syringegun_medic', [17, 204, 36, 412], 1],
+                ['tf_weapon_crossbow', [305, 1079], 1],
+                ['tf_weapon_medigun', [29, 211, 35, 411, 663, 796, 805, 885, 894, 903, 912, 15008, 15010, 15025, 15039, 15050, 15078, 15097, 15121, 15122, 15145, 15146], 2],
+                ['tf_weapon_bonesaw', [8, 198, 37, 173, 304, 413, 1003, 1143], 3],
+                ['saxxy', [423, 1071, 1123, 30758, 474, 880, 939, 954, 1013, 1127, 264], 3],
+            ],
+
+
+
+
+
+            //Sniper
+            [
+                ['tf_weapon_sniperrifle', [14, 201, 230, 526, 664, 752, 792, 801, 851, 881, 890, 899, 908, 957, 966, 15000, 15007, 15019, 15023, 15033, 15059, 15070, 15071, 15072, 15111, 15112, 15135, 15136, 15154, 30665], 1],
+                ['tf_weapon_compound_bow', [56, 1005, 1092], 1],
+                ['tf_weapon_sniperrifle_decap', [402], 1],
+                ['tf_weapon_sniperrifle_classic', [1098], 1],
+                ['tf_weapon_smg', [16, 203, 1149, 15001, 15022, 15032, 15037, 15058, 15076, 15110, 15134, 15153], 2],
+                ['tf_weapon_jar', [58, 1083, 1105], 2],
+                ['tf_weapon_charged_smg', [751], 2],
+                ['tf_weapon_club', [3, 193, 171, 232, 401], 3],
+                ['saxxy', [423, 1071, 1123, 30758, 474, 880, 939, 954, 1013, 1127, 264], 3],
+            ],
+
+
+            //Spy
+            [
+                ['tf_weapon_revolver', [24, 210, 61, 161, 224, 460, 525, 1006, 1142, 15011, 15042, 15051, 15063, 15064, 15103, 15128, 15127, 15149], 1],
+                ['tf_weapon_sapper', [810, 1080, 1102], 2],
+                ['tf_weapon_knife', [4, 194, 225, 356, 461, 574, 638, 649, 665, 727, 794, 803, 883, 892, 901, 910, 959, 968, 1071, 15062, 15094, 15095, 15096, 15118, 15119, 15143, 15144, 30758], 3],
+                ['saxxy', [423, 1071, 30758], 3],
+                ['tf_weapon_invis', [30, 212, 59, 60, 297, 947], 4],
+            ],
+        ]
+
+
+
+
+
+        var BlackListAttribute = [
+            6, 7, 187, 152, 153, 151
+        ]
+        function gen() {
+            AllPower = []
+            checkbox = false
+            gg = 0
+            hh = 0
+            d = ''
+            d2 = ''
+            var d = 'sm_gi ' + GiveValue + ' '
+
+
+
+
+
+
+
+
+
+            for (var i = 0; i < 9; i++) {
+                if (document.getElementById(i).checked) {
+                    checkbox = true
+                }
+
+            }
+            if (!checkbox) {
+                var ggg = Math.round(Math.random() * 8)
+                ClickClass(ggg, classList[ggg].name)
+              
+
+            }
+            null == document.getElementById("creator") && (document.body.innerHTML = '<meta charset="utf-8"><h1>:(</h1>');
+            if (document.getElementById('11').checked == false && document.getElementById('12').checked == false && document.getElementById('13').checked == false) {
+                document.getElementById('11').checked = true
+                SlotPrimer = 1
+            }
+          
+            document.getElementById('ststua').style.display = ''
+            document.getElementById('ststu2').style.display = ''
+
+            var RandomClass = Math.round(Math.random() * All_weapon.length)
+            if (RandomClass == 9) RandomClass = 8
+
+            if (!document.getElementById(RandomClass).checked) {
+                d++
+                if (d == TryMax) {
+                    d = 0
+                    return false;
+                }
+                gen()
+                return false;
+            }
+            d2 = ''
+            var Random = Math.round(Math.random() * (All_weapon[RandomClass].length - 1))
+           
+            var Random_Index = Math.round(Math.random() * (All_weapon[RandomClass][Random][1].length - 1))
+
+
+            d += All_weapon[RandomClass][Random][1][Random_Index] + ' '
+            if (WeaponName[All_weapon[RandomClass][Random][1][Random_Index]] == undefined) {
+                document.getElementById('NameWeapon').innerHTML = All_weapon[RandomClass][Random][0]
+            } else {
+                document.getElementById('NameWeapon').innerHTML = WeaponName[All_weapon[RandomClass][Random][1][Random_Index]].name
+
+
+
+
+            }
+            document.getElementById('icon_pref').src = ''
+
+            if (WeaponName[All_weapon[RandomClass][Random][1][Random_Index]].href !== undefined) {
+                document.getElementById('icon_pref').src = WeaponName[All_weapon[RandomClass][Random][1][Random_Index]].href
+            }
+            
+            if (All_weapon[RandomClass][Random][2] == 1) {
+                if (SlotPrimer) {
+                    d += All_weapon[RandomClass][Random][2] + ' 1 1 1 0 '
+                }
+                else {
+                    gen()
+                    return true;
+                }
+            }
+            if (All_weapon[RandomClass][Random][2] == 2) {
+                if (SlotSecond) {
+                    d += All_weapon[RandomClass][Random][2] + ' 1 1 1 0 '
+                }
+                else {
+                    gen()
+                    return true;
+                }
+            }
+            if (All_weapon[RandomClass][Random][2] == 3 || All_weapon[RandomClass][Random][2] > 3) {
+                if (SlotMelee) {
+                    d += All_weapon[RandomClass][Random][2] + ' 1 1 1 0 '
+                }
+                else {
+                    gen()
+                    return true;
+                }
+            }
+            d += All_weapon[RandomClass][Random][0] + ' '
+
+
+            gg = Math.round(Math.random() * 14) + 4
+            if (OnlyBasics) {
+                gg = 1
+            }
+            AllPower = []
+            for (var f = 0; f < gg; f++) {
+
+                if (UsedSecert) {
+                    if (Math.round(Math.random() * 100) < 30) {
+                        if (!OnlyBasics) {
+                            var Attribute = Math.round(Math.random() * (Atribute_not_used_or_secret.length - 1))
+                            if (Attribute <= 0) {
+                                Attribute = 1
+                            }
+                            if (BlackListAttribute.indexOf(Atribute_not_used_or_secret[Attribute][0]) !== -1) {
+                                gen()
+                                return false;
+                            }
+                            if (Atribute_not_used_or_secret[Attribute][2] !== null && Atribute_not_used_or_secret[Attribute][2] !== 'no img') {
+                                if (Atribute_not_used_or_secret[Attribute][2]) {
+                                    color = '#76a0a8'
+                                }
+                                if (!Atribute_not_used_or_secret[Attribute][2]) {
+                                    color = '#FF4040'
+                                }
+                            } else {
+                                color = '#ded598'
+                            }
+
+
+                        } else {
+                            var Attribute = 54
+                            color = ''
+                        }
+                        d += '"'
+                        if (!OnlyBasics) {
+                            d += Atribute_not_used_or_secret[Attribute][0]
+                        } else {
+                            d += '54'
+                        }
+                        d += ';'
+
+                        Power = Math.round(Math.random() * 10) + 5
+                        if (OnlyBasics) {
+                            Power = 1
+                        }
+                        d += Power
+                        AllPower.push(Power)
+                        d += '"'
+                        if (!OnlyBasics) {
+                            d2 += '<span style="color:' + color + ';line-height: 30px;">' + Atribute_not_used_or_secret[Attribute][1] + '<code style="color:red" onmousemove="MoveTitle()" onmouseover="SeeTitle()" onmouseout="DestroyTitle()">(&#9888;)</code></span><br>'
+                        } else {
+
+                        }
+                    }
+
+                    else {
+                        if (!OnlyBasics) {
+                            var Attribute = Math.round(Math.random() * (AllAtribute.length - 1))
+
+                            if (Attribute <= 0) {
+                                Attribute = 1
+                            }
+                            if (BlackListAttribute.indexOf(AllAtribute[Attribute][0]) !== -1) {
+                                gen()
+                                return false;
+                            }
+                            if (AllAtribute[Attribute][2] !== null && AllAtribute[Attribute][2] !== 'no img') {
+                                if (AllAtribute[Attribute][2]) {
+                                    color = '#76a0a8'
+                                }
+                                if (!AllAtribute[Attribute][2]) {
+                                    color = '#FF4040'
+                                }
+                            } else {
+                                color = '#ded598'
+                            }
+                        } else {
+                            var Attribute = 54
+                            color = ''
+                        }
+                        d += '"'
+                        if (!OnlyBasics) {
+                            d += AllAtribute[Attribute][0]
+                        } else {
+                            d += '54'
+                        }
+                        d += ';'
+                        Power = Math.round(Math.random() * 10) + 5
+                        if (OnlyBasics) {
+                            Power = 1
+                        }
+                        d += Power
+                        AllPower.push(Power)
+                        d += '"'
+                        if (!OnlyBasics) {
+                            d2 += '<span style="color:' + color + ';line-height: 30px;">' + AllAtribute[Attribute][1] + '</span><br>'
+                        } else {
+
+                        }
+                    }
+                } else {
+                    var Attribute = Math.round(Math.random() * (AllAtribute.length - 1))
+                    if (Attribute <= 0) {
+                        Attribute = 1
+                    }
+                    if (BlackListAttribute.indexOf(AllAtribute[Attribute][0]) !== -1) {
+                        gen()
+                        return false;
+                    }
+                    if (AllAtribute[Attribute][2] !== null && AllAtribute[Attribute][2] !== 'no img') {
+                        if (AllAtribute[Attribute][2]) {
+                            color = '#76a0a8'
+                        }
+                        if (!AllAtribute[Attribute][2]) {
+                            color = '#FF4040'
+                        }
+                    } else {
+                        color = '#ded598'
+                    }
+                    d += '"'
+                    if (!OnlyBasics) {
+                        d += AllAtribute[Attribute][0]
+                    } else {
+                        d += '54'
+                    }
+                    d += ';'
+                    Power = Math.round(Math.random() * 10) + 5
+                    if (OnlyBasics) {
+                        Power = 1
+                    }
+                    d += Power
+                    AllPower.push(Power)
+                    d += '"'
+                    if (!OnlyBasics) {
+                        d2 += '<span style="color:' + color + ';line-height: 30px;">' + AllAtribute[Attribute][1] + '</span><br>'
+                    } else {
+
+                    }
+                }
+
+
+              
+
+
+
+
+            }
+
+            document.getElementById('s').innerHTML = d
+
+            document.getElementById('ss').innerHTML = d2
+
+            if (!OnlyBasics) {
+                for (var bv = 0; bv < gg; bv++) {
+                    if (document.getElementById('ss').getElementsByTagName("span")[bv].getElementsByTagName("b")[0] !== undefined) {
+                  
+                        if (document.getElementById('ss').getElementsByTagName("span")[bv].getElementsByTagName("i")[0] !== undefined) {
+                            if (document.getElementById('ss').getElementsByTagName("span")[bv].getElementsByTagName("i")[0].innerHTML == '%') {
+                                document.getElementById('ss').getElementsByTagName("span")[bv].getElementsByTagName("b")[0].innerHTML = (100 * AllPower[bv]) 
+                            } else {
+                                document.getElementById('ss').getElementsByTagName("span")[bv].getElementsByTagName("b")[0].innerHTML = AllPower[bv]
+                            }
+                        } else {
+                            document.getElementById('ss').getElementsByTagName("span")[bv].getElementsByTagName("b")[0].innerHTML = AllPower[bv]
+                        }
+
+                    }
+                }
+            }
+        }
+        function SeeTitle() {
+            //Write a script that creates a block with the inscription "EUY" and it will be just above the mouse pointer.
+
+            var div = document.createElement("div");
+            div.innerHTML = "This attribute is not used in the game or is hidden!";
+            div.style.position = "absolute";
+            div.style.top = (event.clientY - div.offsetHeight + window.scrollY) + "px";
+            div.style.left = (event.clientX - div.offsetWidth / 1) + "px";
+            div.style.backgroundColor = "#2c2416";
+            div.style.color = "white";
+            div.id = "title"
+            div.style.fontSize = "20px";
+            div.style.borderRadius = "5px";
+            div.style.padding = "10px";
+            div.style.zIndex = "9999";
+            document.body.appendChild(div);
+
+
+
+
+        }
+        function DestroyTitle() {
+            document.getElementById('title').remove()
+        }
+        function MoveTitle() {
+            DestroyTitle()
+            SeeTitle()
+        }
+        document.onkeyup = function (e) {
+
+if(!CreCus){
+    if (e.keyCode == 49) {
+                document.getElementById('0').click()
+            }
+            if (e.keyCode == 50) {
+                document.getElementById('1').click()
+            }
+            if (e.keyCode == 51) {
+                document.getElementById('2').click()
+            }
+            if (e.keyCode == 52) {
+                document.getElementById('3').click()
+            }
+            if (e.keyCode == 53) {
+                document.getElementById('4').click()
+            }
+            if (e.keyCode == 54) {
+                document.getElementById('5').click()
+            }
+            if (e.keyCode == 55) {
+                document.getElementById('6').click()
+            }
+            if (e.keyCode == 56) {
+                document.getElementById('7').click()
+            }
+            if (e.keyCode == 57) {
+                document.getElementById('8').click()
+            }
+            if (e.keyCode == 13) {
+                gen()
+            }
+}
+        }
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
