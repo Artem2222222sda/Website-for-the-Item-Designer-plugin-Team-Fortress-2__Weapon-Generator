@@ -1586,7 +1586,6 @@ document.getElementById('ststua').style.display = ''
             if (!checkbox) {
                 var ggg = Math.round(Math.random() * 8)
                 ClickClass(ggg, classList[ggg].name)
-                //  document.getElementById(Math.round(Math.random() * 8)).checked = true
 
             }
             null == document.getElementById("creator") && (document.body.innerHTML = '<meta charset="utf-8"><h1>:(</h1>');
@@ -1594,7 +1593,6 @@ document.getElementById('ststua').style.display = ''
                 document.getElementById('11').checked = true
                 SlotPrimer = 1
             }
-            // document.getElementById('Text1').style.display = ''
             document.getElementById('ststua').style.display = ''
             document.getElementById('ststu2').style.display = ''
 
@@ -1612,7 +1610,6 @@ document.getElementById('ststua').style.display = ''
             }
             d2 = ''
             var Random = Math.round(Math.random() * (All_weapon[RandomClass].length - 1))
-            //console.log(All_weapon[RandomClass])
             var Random_Index = Math.round(Math.random() * (All_weapon[RandomClass][Random][1].length - 1))
 
 
@@ -1631,7 +1628,6 @@ document.getElementById('ststua').style.display = ''
             if (WeaponName[All_weapon[RandomClass][Random][1][Random_Index]].href !== undefined) {
                 document.getElementById('icon_pref').src = WeaponName[All_weapon[RandomClass][Random][1][Random_Index]].href
             }
-            //  console.log(All_weapon[RandomClass][Random][3] == 3)
             if (All_weapon[RandomClass][Random][2] == 1) {
                 if (SlotPrimer) {
                     d += All_weapon[RandomClass][Random][2] + ' 1 1 1 0 '
@@ -1804,122 +1800,6 @@ document.getElementById('ststua').style.display = ''
                 }
 
 
-                /*
-                            if (UsedSecert) {
-                                if (Math.round(Math.random() * 100) > 50) {
-                
-                                    var b = Math.round(Math.random() * (Atribute_not_used_or_secret.length - 1))
-                                    if (b == 0) b = 1
-                                    if (BlackListAttribute.indexOf(b) == -1) {
-                                        if (OnlyBasics) {
-                                            d += '"54;1"'
-                                        }
-                                        var color = 0
-                
-                                        if (Atribute_not_used_or_secret[b][2] !== null && Atribute_not_used_or_secret[b][2] !== 'no img') {
-                                            if (Atribute_not_used_or_secret[b][2]) {
-                                                color = '#76a0a8'
-                                            }
-                                            if (!Atribute_not_used_or_secret[b][2]) {
-                                                color = '#FF4040'
-                                            }
-                                        } else {
-                                            color = '#ded598'
-                                        }
-                
-                                       
-                                        if (OnlyBasics) {
-                                            d2 = ''
-                                        }
-                                        if (!OnlyBasics) {
-                                            d += '"'
-                                            d += Atribute_not_used_or_secret[b][0]
-                                            d += ";"
-                                            hh = Math.round(Math.random() * 10) + 5
-                                            d += hh
-                                            AllPower.push(hh)
-                                            d += '"'
-                                        }
-                                        d2 += '<span style="color:' + color + ';line-height: 30px;">' + Atribute_not_used_or_secret[b][1] + '<code style="color:red" onmousemove="MoveTitle()" onmouseover="SeeTitle()" onmouseout="DestroyTitle()">(&#9888;)</code></span><br>'
-                                    }
-                                    else {
-                                        gen()
-                                    }
-                                }
-                                else {
-                
-                                    var b = Math.round(Math.random() * (Used.length - 1))
-                                    if (b == 0) b = 1
-                                    if (BlackListAttribute.indexOf(b) == -1) {
-                                        var color = 0
-                                        if (OnlyBasics) {
-                                            d += '"54;1"'
-                                        }
-                                        if (Used[b][2] !== null && Used[b][2] !== 'no img') {
-                                            if (Used[b][2]) {
-                                                color = '#76a0a8'
-                                            }
-                                            if (!Used[b][2]) {
-                                                color = '#FF4040'
-                                            }
-                                        } else {
-                                            color = '#ded598'
-                                        }
-                                        if (!OnlyBasics) {
-                                            d2 += '<span style="color:' + color + ';line-height: 30px;">' + AllAtribute[b][1] + '</span><br>'
-                                            if (OnlyBasics) {
-                                                d2 = ''
-                                            }
-                                            d += '"'
-                                            d += AllAtribute[b][0]
-                                            d += ";"
-                                            hh = Math.round(Math.random() * 10) + 5
-                                            d += hh
-                                            AllPower.push(hh)
-                                            d += '"'
-                                        } else {
-                
-                                        }
-                                    }
-                                    else {
-                                        gen()
-                                    }
-                                }
-                            } else {
-                
-                                var b = Math.round(Math.random() * (Used.length - 1))
-                                if (b == 0) b = 1
-                                if (BlackListAttribute.indexOf(b) == -1) {
-                                    if (!OnlyBasics) {
-                
-                
-                                        if (Used[b][2] !== null && Used[b][2] !== 'no img') {
-                                            if (Used[b][2]) {
-                                                color = '#76a0a8'
-                                            }
-                                            if (!Used[b][2]) {
-                                                color = '#FF4040'
-                                            }
-                                        } else {
-                                            color = '#ded598'
-                                        }
-                
-                                        d2 += '<span style="color:' + color + ';line-height: 30px;">' + AllAtribute[b][1] + '</span><br>'
-                                        d += AllAtribute[b][0]
-                                        d += ";"
-                                        hh = Math.round(Math.random() * 10) + 5
-                                        d += hh
-                                        AllPower.push(hh)
-                                        d += '"'
-                                    }
-                
-                                }
-                                else {
-                                    gen()
-                                }
-                            }
-                */
-
 
 
 
@@ -1932,7 +1812,6 @@ document.getElementById('ststua').style.display = ''
             if (!OnlyBasics) {
                 for (var bv = 0; bv < gg; bv++) {
                     if (document.getElementById('ss').getElementsByTagName("span")[bv].getElementsByTagName("b")[0] !== undefined) {
-                        //  console.log(AllPower[bv])
                         if (document.getElementById('ss').getElementsByTagName("span")[bv].getElementsByTagName("i")[0] !== undefined) {
                             if (document.getElementById('ss').getElementsByTagName("span")[bv].getElementsByTagName("i")[0].innerHTML == '%') {
                                 document.getElementById('ss').getElementsByTagName("span")[bv].getElementsByTagName("b")[0].innerHTML = (100 * AllPower[bv]) 
@@ -1948,7 +1827,6 @@ document.getElementById('ststua').style.display = ''
             }
         }
         function SeeTitle() {
-            //Write a script that creates a block with the inscription "EUY" and it will be just above the mouse pointer.
 
             var div = document.createElement("div");
             div.innerHTML = "Данный аттрибут не используеться в игре или скрыт!";
@@ -1975,38 +1853,38 @@ document.getElementById('ststua').style.display = ''
             DestroyTitle()
             SeeTitle()
         }
-        document.onkeyup = function (e) {
+          document.onkeyup = function (e) {
 
-if(!CreCus){
-    if (e.keyCode == 49) {
-                document.getElementById('0').click()
+        if (!CreCus) {
+            if (e.keyCode == 49) {
+                ClickClass(0,'svg_scout')
             }
             if (e.keyCode == 50) {
-                document.getElementById('1').click()
+                ClickClass(1,'svg_soldier')
             }
             if (e.keyCode == 51) {
-                document.getElementById('2').click()
+                ClickClass(2,'svg_pyro')
             }
             if (e.keyCode == 52) {
-                document.getElementById('3').click()
+                ClickClass(3,'svg_demoman')
             }
             if (e.keyCode == 53) {
-                document.getElementById('4').click()
+                ClickClass(4,'svg_heavy')
             }
             if (e.keyCode == 54) {
-                document.getElementById('5').click()
+                ClickClass(5,'svg_engineer')
             }
             if (e.keyCode == 55) {
-                document.getElementById('6').click()
+                ClickClass(6,'svg_medic')
             }
             if (e.keyCode == 56) {
-                document.getElementById('7').click()
+                ClickClass(7,'svg_sniper')
             }
             if (e.keyCode == 57) {
-                document.getElementById('8').click()
+                ClickClass(8,'svg_spy')
             }
             if (e.keyCode == 13) {
                 gen()
             }
-}
         }
+    }
