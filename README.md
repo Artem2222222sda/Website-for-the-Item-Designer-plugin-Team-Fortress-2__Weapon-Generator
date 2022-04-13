@@ -137,6 +137,6 @@ Below are links that helped in the creation of this project
   Baron Варон
 </i>
 
-Code : Baron Варон --------- https://steamcommunity.com/id/BaronFaron/
-Plugin : Item Designer
-Any ideas : Zahar Mihlin ----------- https://steamcommunity.com/profiles/76561198878940277
+Code : Baron Варон --------- https://steamcommunity.com/id/BaronFaron/<br>
+Plugin : Item Designer<br>
+Any ideas : Zahar Mihlin ----------- https://steamcommunity.com/profiles/76561198878940277<br>
