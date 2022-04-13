@@ -1835,7 +1835,6 @@ document.getElementById('ststua').style.display = ''
             }
         }
         function SeeTitle() {
-            //Write a script that creates a block with the inscription "EUY" and it will be just above the mouse pointer.
 
             var div = document.createElement("div");
             div.innerHTML = "This attribute is not used in the game or is hidden!";
@@ -1862,38 +1861,38 @@ document.getElementById('ststua').style.display = ''
             DestroyTitle()
             SeeTitle()
         }
-        document.onkeyup = function (e) {
+    document.onkeyup = function (e) {
 
-if(!CreCus){
-    if (e.keyCode == 49) {
-                document.getElementById('0').click()
+        if (!CreCus) {
+            if (e.keyCode == 49) {
+                ClickClass(0,'svg_scout')
             }
             if (e.keyCode == 50) {
-                document.getElementById('1').click()
+                ClickClass(1,'svg_soldier')
             }
             if (e.keyCode == 51) {
-                document.getElementById('2').click()
+                ClickClass(2,'svg_pyro')
             }
             if (e.keyCode == 52) {
-                document.getElementById('3').click()
+                ClickClass(3,'svg_demoman')
             }
             if (e.keyCode == 53) {
-                document.getElementById('4').click()
+                ClickClass(4,'svg_heavy')
             }
             if (e.keyCode == 54) {
-                document.getElementById('5').click()
+                ClickClass(5,'svg_engineer')
             }
             if (e.keyCode == 55) {
-                document.getElementById('6').click()
+                ClickClass(6,'svg_medic')
             }
             if (e.keyCode == 56) {
-                document.getElementById('7').click()
+                ClickClass(7,'svg_sniper')
             }
             if (e.keyCode == 57) {
-                document.getElementById('8').click()
+                ClickClass(8,'svg_spy')
             }
             if (e.keyCode == 13) {
                 gen()
             }
-}
         }
+    }
