@@ -107,7 +107,7 @@ Below are links that helped in the creation of this project
   
   The characteristics of the weapon may not match the characteristics in the game. To prevent the game from crashing, read the approximate characteristics of the weapon. If the game crashes because of some attribute, then add it to the Black List (BlackListAttribute variable)
   
-  css and js are in one file
+
 </i>
 
   <br><br>
@@ -131,8 +131,12 @@ Below are links that helped in the creation of this project
   
   Характеристи оружие могут не совпадать с характеристиками в игре. Чтобы игра не вылетал читайте приблизительные характристики оружия. Если игра вылетает из-за кого-небудь атрибута то добавте его в Чёрный список(переменная BlackListAttribute)
   
-  css и js написаны в одно файле 
+
   
   :) 
   Baron Варон
 </i>
+
+Code : Baron Варон --------- https://steamcommunity.com/id/BaronFaron/
+Plugin : Item Designer
+Any ideas : Zahar Mihlin ----------- https://steamcommunity.com/profiles/76561198878940277
