@@ -95,6 +95,7 @@ Below are links that helped in the creation of this project
   <b>
   <ul>
     <li>TF2 Attribute ---- https://wiki.teamfortress.com/wiki/List_of_item_attributes/ru</li>
+      <li>TF2 Weapon and Decorated ---- https://wiki.teamfortress.com/wiki/Weapons and https://wiki.teamfortress.com/wiki/Decorated#The_Concealed_Killer_Collection</li>
     <li>TF2 Item Definition Indexes ---- https://wiki.alliedmods.net/Team_fortress_2_item_definition_indexes</li>
     <li>Plugin ---- https://forums.alliedmods.net/showthread.php?p=1353985</li>
     </ul>
@@ -118,6 +119,7 @@ Below are links that helped in the creation of this project
   <b>
   <ul>
     <li>TF2 Attribute ---- https://wiki.teamfortress.com/wiki/List_of_item_attributes/ru</li>
+    <li>TF2 Weapon and Decorated ---- https://wiki.teamfortress.com/wiki/Weapons and https://wiki.teamfortress.com/wiki/Decorated#The_Concealed_Killer_Collection</li>
     <li>TF2 Item Definition Indexes ---- https://wiki.alliedmods.net/Team_fortress_2_item_definition_indexes</li>
     <li>Плагин ---- https://forums.alliedmods.net/showthread.php?p=1353985</li>
     </ul>
