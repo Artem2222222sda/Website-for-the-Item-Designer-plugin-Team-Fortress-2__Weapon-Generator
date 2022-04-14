@@ -172,7 +172,7 @@ function RemoveAll(){
         document.getElementById('Button_gen').style.display = 'none'
         document.getElementById('Button_custom').innerHTML = 'Создать рандомное оружие'
         document.getElementById('SettingsRandom').style.display = 'none'
-        
+        document.getElementById('icon_pref').src = ''
         CreCus = true
         document.getElementById('NameWeapon').innerHTML =''
        
